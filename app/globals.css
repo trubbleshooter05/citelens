@@ -130,6 +130,13 @@ h2 {
   max-width: 650px;
 }
 
+.hero .demo-note {
+  color: #8a7d70;
+  font-size: 16px;
+  font-weight: 800;
+  margin-top: -4px;
+}
+
 .audit-form {
   margin-top: 28px;
   max-width: 640px;

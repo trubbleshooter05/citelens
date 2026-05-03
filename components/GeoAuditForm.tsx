@@ -25,12 +25,12 @@ export function GeoAuditForm() {
           required
           value={site}
         />
-        <button type="submit">Run sample audit</button>
+        <button type="submit">View demo report</button>
       </div>
       {submitted ? (
         <p>
-          Sample report generated for {site}. Scroll down to view the AI
-          visibility report.
+          Demo report loaded using sample data for {site}. A real audit will
+          connect live AI results after early access.
         </p>
       ) : null}
     </form>

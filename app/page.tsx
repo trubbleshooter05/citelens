@@ -25,6 +25,9 @@ export default function Home() {
             See why ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews
             cite your competitors instead of you. Then get exact tasks to fix it.
           </p>
+          <p className="demo-note">
+            MVP demo uses sample report data. Enter a site to preview the workflow.
+          </p>
           <GeoAuditForm />
         </div>
 
@@ -154,7 +157,10 @@ export default function Home() {
 
       <section className="final-cta" id="audit">
         <h2>Want a sample AI citation action report?</h2>
-        <p>Enter a brand and see the weekly fixes CiteLens would recommend.</p>
+        <p>
+          Preview the workflow with sample data. Early access users get live
+          prompt checks for their own site.
+        </p>
         <GeoAuditForm />
       </section>
     </main>
