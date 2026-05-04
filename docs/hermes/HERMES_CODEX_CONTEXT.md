@@ -9,10 +9,10 @@ This file is the source of truth for Hermes paths, Obsidian paths, Telegram deli
 Current repo path:
 
 ```text
-/Users/openclaw/Documents/CiteLens
+/Users/openclaw/projects/CiteLens
 ```
 
-Do not assume `~/projects` for this project.
+Expected repo path is `~/projects/CiteLens`. Always verify with `pwd` before editing files.
 
 ## Hermes Critical Paths
 
@@ -111,8 +111,8 @@ Manual Hermes run fallback:
 
 ## Codex Must Always Know
 
-- Current repo path is `/Users/openclaw/Documents/CiteLens`.
-- Do not assume `~/projects`.
+- Current repo path is `/Users/openclaw/projects/CiteLens`.
+- Always verify the working directory with `pwd` before editing files.
 - Hermes root is `~/.hermes`.
 - Obsidian root is `~/ObsidianVault`.
 - Telegram delivery is handled by Hermes `deliver: telegram`.

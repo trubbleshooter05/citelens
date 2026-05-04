@@ -1,3 +1,4 @@
+import { CopyTaskBriefButton } from "@/components/CopyTaskBriefButton";
 import { GeoAuditForm } from "@/components/GeoAuditForm";
 import { platforms, prompts, weeklyActions } from "@/data/geo";
 
@@ -18,15 +19,15 @@ export default function Home() {
 
       <section className="hero">
         <div>
-          <div className="proof-pill">$29/mo AI citation action reports for SMBs</div>
-          <p className="eyebrow">AI citation action engine</p>
-          <h1>Own your AI citations.</h1>
+          <div className="proof-pill">$29/mo AI citation tracker for SMBs</div>
+          <p className="eyebrow">AI citation tracker</p>
+          <h1>Win the prompts sending buyers elsewhere.</h1>
           <p>
-            See why ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews
-            cite your competitors instead of you. Then get exact tasks to fix it.
+            See when ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews
+            recommend competitors instead of you. Then get exact content fixes to win those prompts.
           </p>
           <p className="demo-note">
-            MVP demo uses sample report data. Enter a site to preview the workflow.
+            MVP demo uses sample report data. Enter a site to preview the action report.
           </p>
           <GeoAuditForm />
         </div>
@@ -43,7 +44,7 @@ export default function Home() {
           <div className="urgent-fix">
             <b>Do this first</b>
             <span>Add comparison table to /card-grading</span>
-            <small>AI cites PSA, TAG, and BGS for this prompt.</small>
+            <small>They answer pricing and turnaround better than your page.</small>
           </div>
           <div className="mini-bars">
             {platforms.map((platform) => (
@@ -62,7 +63,7 @@ export default function Home() {
       <section className="dashboard" id="dashboard">
         <div className="section-head">
           <p className="eyebrow">Demo action report</p>
-          <h2>Not just monitoring. A weekly AI SEO to-do list.</h2>
+          <h2>Not just monitoring. A weekly AI citation task list.</h2>
         </div>
 
         <div className="this-week">
@@ -71,10 +72,10 @@ export default function Home() {
             <h3>Create a competitor comparison page</h3>
             <p>
               AI tools cite PSA and TAG because they answer pricing, turnaround,
-              guarantees, and trust signals in one scannable page.
+              guarantees, and trust signals in one scannable page. Copy the brief and hand it to a writer or assistant.
             </p>
           </div>
-          <button>Copy task brief</button>
+          <CopyTaskBriefButton task={weeklyActions[0]} />
         </div>
 
         <div className="metrics">
@@ -105,13 +106,13 @@ export default function Home() {
                   <strong>{prompt.query}</strong>
                   <small>
                     Target page: {prompt.targetPage} · Competitors cited:{" "}
-                    {prompt.competitors.join(", ")}
+                    {prompt.competitors.join(", ")} · {prompt.effort} · {prompt.impact} impact
                   </small>
                 </div>
                 <span className={`status ${prompt.mention.toLowerCase()}`}>
                   {prompt.mention}
                 </span>
-                <p>{prompt.fix}</p>
+                <p>{prompt.whyTheyWin} {prompt.fix}</p>
               </article>
             ))}
           </div>
@@ -145,7 +146,7 @@ export default function Home() {
           <article className="featured">
             <h3>Growth</h3>
             <strong>$79/mo</strong>
-            <p>50 prompts, competitor evidence, exact content fixes.</p>
+            <p>50 prompts, competitor evidence, copy-ready task briefs.</p>
           </article>
           <article>
             <h3>Agency</h3>
@@ -159,7 +160,7 @@ export default function Home() {
         <h2>Want a sample AI citation action report?</h2>
         <p>
           Preview the workflow with sample data. Early access users get live
-          prompt checks for their own site.
+          prompt checks and copy-ready task briefs for their own site.
         </p>
         <GeoAuditForm />
       </section>

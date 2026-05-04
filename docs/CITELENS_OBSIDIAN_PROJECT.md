@@ -3,8 +3,7 @@
 ## Project
 
 - Repo: `https://github.com/trubbleshooter05/citelens`
-- Local path: `/Users/openclaw/Documents/CiteLens`
-- Current fallback path if rename is blocked: `/Users/openclaw/Documents/New project 3`
+- Local path: `/Users/openclaw/projects/CiteLens`
 - Domain: `https://citelens.app`
 - Product: AI citation action engine for SMBs.
 
@@ -15,7 +14,7 @@ Visitor enters a brand or website, previews a demo AI visibility workflow using 
 ## Codex Rules
 
 - Read `docs/hermes/HERMES_CODEX_CONTEXT.md` before Hermes, cron, gateway, env, Obsidian, or Telegram work.
-- Do not assume `~/projects`.
+- Expected repo path is `~/projects/CiteLens`; always verify with `pwd` first.
 - Hermes root is `~/.hermes`.
 - Obsidian root is `~/ObsidianVault`.
 - Telegram delivery must go through Hermes `deliver: telegram`; scripts must not send Telegram directly unless explicitly told.
