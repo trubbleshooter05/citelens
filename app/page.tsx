@@ -119,7 +119,7 @@ export default function Home() {
           </div>
 
           <aside className="fix-list">
-            <h3>This week's actions</h3>
+            <h3>This week&apos;s actions</h3>
             <div className="action-stack">
               {weeklyActions.map((action) => (
                 <article key={action.title}>
