@@ -523,6 +523,96 @@ h2 {
   margin: 10px 0;
 }
 
+.email-banner {
+  margin: 32px 0;
+}
+
+.email-banner-inner {
+  align-items: center;
+  background: #17130f;
+  border-radius: 24px;
+  color: white;
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  padding: 32px 40px;
+}
+
+.email-banner-inner strong {
+  display: block;
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.email-banner-inner p {
+  color: #a09283;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 440px;
+}
+
+.email-capture {
+  flex-shrink: 0;
+  min-width: 340px;
+}
+
+.email-capture-label {
+  color: #d8d1c7;
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.email-capture-form {
+  display: flex;
+  gap: 8px;
+}
+
+.email-capture-form input {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  color: white;
+  flex: 1;
+  min-height: 48px;
+  padding: 0 14px;
+}
+
+.email-capture-form input::placeholder {
+  color: #6b6059;
+}
+
+.email-capture-form button {
+  background: var(--accent);
+  border: 0;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 900;
+  min-height: 48px;
+  padding: 0 18px;
+  white-space: nowrap;
+}
+
+.email-capture-form button:disabled {
+  opacity: 0.6;
+}
+
+.email-capture-confirm {
+  color: #4ade80;
+  font-size: 14px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.email-capture-error {
+  color: #f87171;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
 .final-cta {
   text-align: center;
 }
@@ -539,6 +629,16 @@ h2 {
   .pricing,
   .plans {
     grid-template-columns: 1fr;
+  }
+
+  .email-banner-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .email-capture {
+    min-width: 0;
+    width: 100%;
   }
 
   .metrics {

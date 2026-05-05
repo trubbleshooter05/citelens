@@ -1,0 +1,24 @@
+{
+  "name": "citelens-video",
+  "version": "1.0.0",
+  "description": "CiteLens viral Remotion videos",
+  "scripts": {
+    "studio": "npx remotion studio src/index.ts",
+    "render:competitor": "npx remotion render --concurrency=1 src/index.ts CompetitorHook --output out/citelens-competitor-hook.mp4",
+    "render:taskbrief": "npx remotion render --concurrency=1 src/index.ts TaskBriefDemo --output out/citelens-task-brief.mp4",
+    "render:score": "npx remotion render --concurrency=1 src/index.ts ScoreReveal --output out/citelens-score-reveal.mp4",
+    "render:all": "npm run render:competitor && npm run render:taskbrief && npm run render:score"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "@remotion/renderer": "^4.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}

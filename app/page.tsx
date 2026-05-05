@@ -1,4 +1,5 @@
 import { CopyTaskBriefButton } from "@/components/CopyTaskBriefButton";
+import { EmailCapture } from "@/components/EmailCapture";
 import { GeoAuditForm } from "@/components/GeoAuditForm";
 import { platforms, prompts, weeklyActions } from "@/data/geo";
 
@@ -153,6 +154,16 @@ export default function Home() {
             <strong>$149/mo</strong>
             <p>White-label action reports for up to 10 clients.</p>
           </article>
+        </div>
+      </section>
+
+      <section className="email-banner">
+        <div className="email-banner-inner">
+          <div>
+            <strong>Not ready to comment?</strong>
+            <p>Get a sample CiteLens report sent to your inbox — no sign-up friction, no pitch.</p>
+          </div>
+          <EmailCapture />
         </div>
       </section>
 
