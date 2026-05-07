@@ -10,7 +10,7 @@ const FPS = 30;
 export function Root() {
   return (
     <>
-      {/* Scene 1: Competitor AI Mention Hook — 21.08s */}
+      {/* Scene 1: Competitor Hook — 633 frames / ~21s */}
       <Composition
         id="CompetitorHook"
         component={CompetitorHook}
@@ -20,7 +20,7 @@ export function Root() {
         height={H}
       />
 
-      {/* Scene 2: Copy-Ready Task Brief Demo — 23.43s */}
+      {/* Scene 2: Task Brief Demo — 703 frames / ~23s */}
       <Composition
         id="TaskBriefDemo"
         component={TaskBriefDemo}
@@ -30,7 +30,7 @@ export function Root() {
         height={H}
       />
 
-      {/* Scene 3: Score Reveal / Validation Hook — 23.22s */}
+      {/* Scene 3: Score Reveal / Validation Hook — 697 frames / ~23s */}
       <Composition
         id="ScoreReveal"
         component={ScoreReveal}

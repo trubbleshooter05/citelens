@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "lint": "eslint .",
-    "growth:intel": "node --import tsx scripts/growth-intel.ts"
+    "growth:intel": "node --import tsx scripts/growth-intel.ts",
+    "ugc:daily": "node --import tsx scripts/daily-ugc-workflow.ts"
   },
   "dependencies": {
     "next": "16.2.4",

@@ -4,7 +4,7 @@ import AVFoundation
 struct Slide { let image: String; let headline: String; let subhead: String; let duration: Double }
 struct Reel { let filename: String; let slides: [Slide] }
 
-let root = URL(fileURLWithPath: "/Users/openclaw/Documents/New project 3")
+let root = URL(fileURLWithPath: "/Users/openclaw/projects/CiteLens")
 let dir = root.appendingPathComponent("demo/citelens")
 let width = 1080
 let height = 1920

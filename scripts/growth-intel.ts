@@ -23,12 +23,20 @@ type Opportunity = {
   sourceSignal: string;
   nextAction: string;
   ugcAngle: string;
+  ugcVoice: string;
+  ugcHook: string;
+  ugcScript: string;
+  ugcReferenceVideo: string;
+  freshnessNote: string;
   score: number;
 };
 
 const ROOT = process.cwd();
-const OBSIDIAN_DIR = "/Users/openclaw/ObsidianVault/projects/citelens/growth-intel";
+const OBSIDIAN_DIR = process.env.CITELENS_OBSIDIAN_GROWTH_DIR ?? "/Users/openclaw/ObsidianVault/projects/citelens/growth-intel";
 const SITE = "https://citelens.app";
+const UGC_REFERENCE_VIDEO = "citelens-score-reveal.mp4";
+const UGC_VOICE = "founder MVP validation voice from citelens-score-reveal.mp4";
+const UGC_HISTORY_FILE = path.join(ROOT, "data", "growth", "ugc-history.json");
 
 const TARGETS: TargetCluster[] = [
   {
@@ -222,10 +230,77 @@ function normalize(text: string): string {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 }
 
+type UgcHistoryItem = { date: string; cluster: string; hook: string; script: string };
+
+function readUgcHistory(): UgcHistoryItem[] {
+  if (!existsSync(UGC_HISTORY_FILE)) return [];
+  try {
+    const parsed = JSON.parse(readFileSync(UGC_HISTORY_FILE, "utf8"));
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+function writeUgcHistory(items: UgcHistoryItem[]): void {
+  mkdirSync(path.dirname(UGC_HISTORY_FILE), { recursive: true });
+  writeFileSync(UGC_HISTORY_FILE, JSON.stringify(items.slice(-120), null, 2));
+}
+
 function toNumber(value: string | undefined): number {
   if (!value) return 0;
   const parsed = Number(value.replace("%", ""));
   return Number.isFinite(parsed) ? parsed : 0;
+}
+
+function previousDate(date: string): string {
+  const parsed = new Date(`${date}T00:00:00.000Z`);
+  parsed.setUTCDate(parsed.getUTCDate() - 1);
+  return parsed.toISOString().slice(0, 10);
+}
+
+function dailyVariant(date: string, cluster: string): number {
+  const text = `${date}:${cluster}`;
+  return Array.from(text).reduce((sum, char) => sum + char.charCodeAt(0), 0);
+}
+
+function buildUgcCreative(target: TargetCluster, date: string, history: UgcHistoryItem[]): Pick<Opportunity, "ugcVoice" | "ugcHook" | "ugcScript" | "ugcReferenceVideo"> {
+  const hooks = [
+    `I'm testing one thing: does ${target.keyword} turn into a real CiteLens task?`,
+    `This is an MVP check, not a launch claim: ${target.keyword}.`,
+    `I don't want another dashboard. I want to know if ${target.keyword} is painful enough to fix weekly.`,
+  ];
+  const bridges = [
+    "Most AI visibility tools stop at reporting. We force one specific content action.",
+    "The point isn't a prettier dashboard. The point is copy-ready work your team can ship.",
+    "If a keyword cannot produce a practical next move, it doesn't belong in the workflow.",
+    "We track whether this turns into a real execution queue, not vanity metrics.",
+  ];
+  const closes = [
+    "If this feels useful, I build the live audit next. If it feels fake, I cut it.",
+    "Try the demo and tell me if this is a real weekly pain or just a neat chart.",
+    "The question is simple: would you use this every week, or ignore it after one look?",
+  ];
+  const recent = history.slice(-30);
+  const usedHooks = new Set(recent.map((item) => normalize(item.hook)));
+  const usedScripts = new Set(recent.map((item) => normalize(item.script)));
+  const seed = dailyVariant(date, target.cluster);
+  let hook = hooks[seed % hooks.length];
+  let script = "";
+  for (let i = 0; i < hooks.length * bridges.length * closes.length; i += 1) {
+    hook = hooks[(seed + i) % hooks.length];
+    const bridge = bridges[(seed + i * 2) % bridges.length];
+    const close = closes[(seed + i * 3) % closes.length];
+    script = `${hook} ${bridge} CiteLens turns that AI visibility gap into one copy-ready action: ${target.nextAction} Not another analytics dashboard. ${close}`;
+    if (!usedHooks.has(normalize(hook)) && !usedScripts.has(normalize(script))) break;
+  }
+
+  return {
+    ugcVoice: UGC_VOICE,
+    ugcHook: hook,
+    ugcScript: script,
+    ugcReferenceVideo: UGC_REFERENCE_VIDEO,
+  };
 }
 
 function getGscRows(): CsvRow[] {
@@ -284,7 +359,7 @@ function mentionsKeyword(route: string, keyword: string): boolean {
   return normalize(pageTextForRoute(route)).includes(normalize(keyword));
 }
 
-function buildOpportunities(routes: Set<string>, gscRows: CsvRow[]): Opportunity[] {
+function buildOpportunities(routes: Set<string>, gscRows: CsvRow[], date: string, history: UgcHistoryItem[]): Opportunity[] {
   return TARGETS.map((target) => {
     const exactRouteExists = routes.has(target.preferredPath);
     const dynamicRouteExists = Array.from(routes).some((route) => {
@@ -335,9 +410,52 @@ function buildOpportunities(routes: Set<string>, gscRows: CsvRow[]): Opportunity
       sourceSignal: signal,
       nextAction: target.nextAction,
       ugcAngle: target.ugcAngle,
+      ...buildUgcCreative(target, date, history),
+      freshnessNote: "",
       score,
     };
   }).sort((a, b) => b.score - a.score || a.opportunity.localeCompare(b.opportunity));
+}
+
+function opportunitySignature(opp: Opportunity): string {
+  return [
+    opp.opportunity,
+    opp.cluster,
+    opp.recommendedAsset,
+    opp.routeStatus,
+    opp.sourceSignal,
+    opp.nextAction,
+    opp.score,
+  ].join("||");
+}
+
+function staleSourceWarning(date: string, opportunities: Opportunity[]): string {
+  const previousCsv = path.join(ROOT, "data", "growth", `citelens-growth-intel-${previousDate(date)}.csv`);
+  const previousRows = readCsvIfExists(previousCsv);
+  if (previousRows.length === 0 || previousRows.length !== opportunities.length) return "";
+
+  const currentSignature = opportunities
+    .map((opp) => opportunitySignature(opp))
+    .sort()
+    .join("\n");
+  const previousSignature = previousRows
+    .map((row) =>
+      [
+        row.opportunity,
+        row.cluster,
+        row.recommended_asset,
+        row.route_status,
+        row.source_signal,
+        row.next_action,
+        row.score,
+      ].join("||")
+    )
+    .sort()
+    .join("\n");
+
+  return currentSignature === previousSignature
+    ? `Freshness Warning: opportunity inputs are the same source inputs as ${previousDate(date)}. UGC scripts were re-voiced in the ${UGC_REFERENCE_VIDEO} style, but keyword/source data should be refreshed before treating this as new intel.`
+    : "";
 }
 
 function toCsv(opportunities: Opportunity[]): string {
@@ -351,6 +469,11 @@ function toCsv(opportunities: Opportunity[]): string {
     "source_signal",
     "next_action",
     "ugc_angle",
+    "ugc_voice",
+    "ugc_hook",
+    "ugc_script",
+    "ugc_reference_video",
+    "freshness_note",
     "score",
   ];
 
@@ -365,6 +488,11 @@ function toCsv(opportunities: Opportunity[]): string {
       opp.sourceSignal,
       opp.nextAction,
       opp.ugcAngle,
+      opp.ugcVoice,
+      opp.ugcHook,
+      opp.ugcScript,
+      opp.ugcReferenceVideo,
+      opp.freshnessNote,
       opp.score,
     ].map(csvEscape).join(",")
   );
@@ -372,7 +500,7 @@ function toCsv(opportunities: Opportunity[]): string {
   return `${headers.join(",")}\n${lines.join("\n")}\n`;
 }
 
-function buildMarkdown(date: string, routes: Set<string>, rows: CsvRow[], opportunities: Opportunity[]): string {
+function buildMarkdown(date: string, routes: Set<string>, rows: CsvRow[], opportunities: Opportunity[], freshnessWarning: string): string {
   const top = opportunities.slice(0, 5);
   const missing = opportunities.filter((opp) => opp.routeStatus === "Missing exact-fit route");
   const copyGaps = opportunities.filter((opp) => opp.routeStatus === "Existing route, copy gap");
@@ -394,6 +522,7 @@ Generated by \`npm run growth:intel\`.
 - GSC/watch rows read: ${rows.length}.
 - Exact-fit missing route ideas: ${missing.length}.
 - Existing routes with likely copy gaps: ${copyGaps.length}.
+${freshnessWarning ? `\n## Freshness Warning\n\n${freshnessWarning}\n` : ""}
 
 ## Top Opportunities
 
@@ -402,7 +531,9 @@ ${top.map((opp, index) => `${index + 1}. **${opp.opportunity}** (${opp.priority}
    - Status: ${opp.routeStatus}
    - Why: ${opp.sourceSignal}
    - Next: ${opp.nextAction}
-   - UGC angle: ${opp.ugcAngle}`).join("\n\n")}
+   - UGC angle: ${opp.ugcAngle}
+   - UGC voice: ${opp.ugcVoice}
+   - UGC script: ${opp.ugcScript}`).join("\n\n")}
 
 ## Recommended Build Queue
 
@@ -434,7 +565,12 @@ function main(): void {
   const { date } = parseArgs();
   const routes = getExistingRoutes();
   const rows = getGscRows();
-  const opportunities = buildOpportunities(routes, rows);
+  const history = readUgcHistory();
+  const opportunities = buildOpportunities(routes, rows, date, history);
+  writeUgcHistory([
+    ...history,
+    ...opportunities.map((opp) => ({ date, cluster: opp.cluster, hook: opp.ugcHook, script: opp.ugcScript })),
+  ]);
 
   const docsDir = path.join(ROOT, "docs", "growth");
   const dataDir = path.join(ROOT, "data", "growth");
@@ -445,13 +581,18 @@ function main(): void {
   const csvPath = path.join(dataDir, `citelens-growth-intel-${date}.csv`);
   const obsidianMdPath = path.join(OBSIDIAN_DIR, `citelens-growth-intel-${date}.md`);
 
-  const markdown = buildMarkdown(date, routes, rows, opportunities);
+  const freshnessWarning = staleSourceWarning(date, opportunities);
+  const opportunitiesWithFreshness = opportunities.map((opp) => ({
+    ...opp,
+    freshnessNote: freshnessWarning,
+  }));
+  const markdown = buildMarkdown(date, routes, rows, opportunitiesWithFreshness, freshnessWarning);
   writeFileSync(mdPath, markdown);
-  writeFileSync(csvPath, toCsv(opportunities));
+  writeFileSync(csvPath, toCsv(opportunitiesWithFreshness));
   mkdirSync(OBSIDIAN_DIR, { recursive: true });
   writeFileSync(obsidianMdPath, markdown);
 
-  const top = opportunities[0];
+  const top = opportunitiesWithFreshness[0];
   console.log(`${top?.priority ?? "P2"} CiteLens growth intel: ${top?.opportunity ?? "none"} -> ${top?.recommendedAsset ?? "no action"}`);
 }
 

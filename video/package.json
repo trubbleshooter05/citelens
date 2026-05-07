@@ -4,9 +4,9 @@
   "description": "CiteLens viral Remotion videos",
   "scripts": {
     "studio": "npx remotion studio src/index.ts",
-    "render:competitor": "npx remotion render --concurrency=1 src/index.ts CompetitorHook --output out/citelens-competitor-hook.mp4",
-    "render:taskbrief": "npx remotion render --concurrency=1 src/index.ts TaskBriefDemo --output out/citelens-task-brief.mp4",
-    "render:score": "npx remotion render --concurrency=1 src/index.ts ScoreReveal --output out/citelens-score-reveal.mp4",
+    "render:competitor": "npx remotion render --concurrency=1 src/index.ts CompetitorHook --output out/citelens-competitor-hook.mp4 --overwrite --gl=swiftshader \"--chromium-flags=--no-sandbox\"",
+    "render:taskbrief": "npx remotion render --concurrency=1 src/index.ts TaskBriefDemo --output out/citelens-task-brief.mp4 --overwrite --gl=swiftshader \"--chromium-flags=--no-sandbox\"",
+    "render:score": "npx remotion render --concurrency=1 src/index.ts ScoreReveal --output out/citelens-score-reveal.mp4 --overwrite --gl=swiftshader \"--chromium-flags=--no-sandbox\"",
     "render:all": "npm run render:competitor && npm run render:taskbrief && npm run render:score"
   },
   "dependencies": {

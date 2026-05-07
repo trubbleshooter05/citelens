@@ -21,11 +21,12 @@ export default function Home() {
       <section className="hero">
         <div>
           <div className="proof-pill">$29/mo AI citation tracker for SMBs</div>
-          <p className="eyebrow">AI citation tracker</p>
+          <p className="eyebrow">AI SEO tool · GEO platform</p>
           <h1>Win the prompts sending buyers elsewhere.</h1>
           <p>
-            See when ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews
-            recommend competitors instead of you. Then get exact content fixes to win those prompts.
+            Use CiteLens as your GEO platform: trace how AI search surfaces your competitors, then ship the upgrades an{" "}
+            <strong>AI SEO tool</strong> should prescribe—focused on citations in ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews,
+            not vanity rank charts.
           </p>
           <p className="demo-note">
             MVP demo uses sample report data. Enter a site to preview the action report.
