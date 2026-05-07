@@ -20,33 +20,39 @@ export default function Home() {
 
       <section className="hero">
         <div>
-          <div className="proof-pill">$29/mo AI citation tracker for SMBs</div>
-          <p className="eyebrow">AI SEO tool · GEO platform</p>
-          <h1>Win the prompts sending buyers elsewhere.</h1>
+          <div className="proof-pill">$29/mo AI citation action reports for SMBs</div>
+          <p className="eyebrow">AI citation action engine · GEO platform</p>
+          <h1>
+            Own your AI citations—with a weekly fix list.
+          </h1>
           <p>
-            Use CiteLens as your GEO platform: trace how AI search surfaces your competitors, then ship the upgrades an{" "}
-            <strong>AI SEO tool</strong> should prescribe—focused on citations in ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews,
-            not vanity rank charts.
+            Most GEO dashboards stop at a visibility score.&nbsp;<strong>Then what?</strong> CiteLens ships a{" "}
+            <strong>copy‑ready weekly task brief</strong>
+            {": "}exact prompts you are losing, the page gaps behind them, and prioritized actions your team can paste into
+            backlog—plus an <strong>AI SEO tool</strong> lens on ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews.
           </p>
           <p className="demo-note">
-            MVP demo uses sample report data. Enter a site to preview the action report.
+            MVP demo uses sample report data. Enter any brand or URL to preview the action report—not just the score ring.
           </p>
           <GeoAuditForm />
         </div>
 
         <aside className="hero-product">
           <div className="product-top">
-            <span>CiteLens report</span>
-            <b>Weekly</b>
+            <span>Weekly delivery</span>
+            <b>Task brief + fix list</b>
           </div>
-          <div className="score-ring">
+          <div className="urgent-fix prominent-fix">
+            <b>Actual fix list (sample)</b>
+            <span>
+              Do this first: add a comparison table on pricing — competitors cite turnaround, guarantees, and fees in one
+              scannable block your models can quote.
+            </span>
+            <small>Copy-ready bullets ship in each weekly brief—not just “improve EEAT.”</small>
+          </div>
+          <div className="score-ring muted-score">
             <strong>34%</strong>
-            <span>AI citation score</span>
-          </div>
-          <div className="urgent-fix">
-            <b>Do this first</b>
-            <span>Add comparison table to /card-grading</span>
-            <small>They answer pricing and turnaround better than your page.</small>
+            <span>citation gap score · demo</span>
           </div>
           <div className="mini-bars">
             {platforms.map((platform) => (

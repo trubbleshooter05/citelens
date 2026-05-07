@@ -25,7 +25,7 @@ export function GeoAuditForm() {
           required
           value={site}
         />
-        <button type="submit">View demo report</button>
+        <button type="submit">Run sample audit</button>
       </div>
       {submitted ? (
         <p>

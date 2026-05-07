@@ -6,7 +6,7 @@ import { GoogleAnalytics } from "@/components/google-analytics";
 export const metadata: Metadata = {
   title: "CiteLens | AI Citation Action Engine",
   description:
-    "See why AI tools cite competitors instead of you, then get exact weekly content fixes to improve AI visibility.",
+    "Own your AI citations with a weekly copy-ready task brief—exact fixes for ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews. Not vanity scores.",
   keywords: [
     "GEO tracking",
     "AI search visibility",

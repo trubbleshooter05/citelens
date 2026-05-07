@@ -294,6 +294,29 @@ h2 {
   color: var(--muted);
 }
 
+.prominent-fix {
+  margin-bottom: 14px;
+  margin-top: 0;
+}
+
+.prominent-fix span {
+  display: block;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.muted-score {
+  margin-top: 4px;
+  min-height: 160px !important;
+  opacity: 0.95;
+  padding: 18px !important;
+}
+
+.muted-score strong {
+  font-size: 72px !important;
+}
+
 .score-card > strong {
   display: block;
   font-size: 86px;
