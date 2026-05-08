@@ -1,5 +1,5 @@
 # CiteLens UGC Approval Pack — 2026-05-06
-Generated: 5/6/2026, 8:48:55 PM
+Generated: 5/6/2026, 9:03:55 PM
 
 ## Videos (with voiceover)
 - `/Users/openclaw/projects/CiteLens/video/out/citelens-competitor-hook.mp4`
@@ -17,9 +17,9 @@ Generated: 5/6/2026, 8:48:55 PM
 
 #### TikTok / Reels Caption
 ```
-Perplexity is citing my competitors but not me.
+AI SEO is completely different from traditional SEO.
 
-This is an MVP check, not a launch claim: perplexity citations for my company. Most AI visibility tools stop at reportin...
+I don't want another dashboard. I want to know if ai seo geo tool is painful enough to fix weekly. The point isn't a pre...
 
 👉 citelens.app (link in bio)
 
@@ -28,7 +28,7 @@ This is an MVP check, not a launch claim: perplexity citations for my company. M
 
 #### Instagram Caption
 ```
-Perplexity is citing my competitors but not me.
+AI SEO is completely different from traditional SEO.
 
 Most brands have no idea their competitors are being cited by ChatGPT, Claude, and Perplexity instead of them.
 
@@ -43,9 +43,9 @@ Not a dashboard. A fix list.
 
 #### YouTube Description
 ```
-Perplexity is citing my competitors but not me.
+AI SEO is completely different from traditional SEO.
 
-This is an MVP check, not a launch claim: perplexity citations for my company. Most AI visibility tools stop at reporting. We force one specific content action. CiteLens turns that AI visibility gap into one copy-ready action: Create Perplexity-specific guide covering their citation display and how to optimize for it. Not another analytics dashboard. The question is simple: would you use this every week, or ignore it after one look?
+I don't want another dashboard. I want to know if ai seo geo tool is painful enough to fix weekly. The point isn't a prettier dashboard. The point is copy-ready work your team can ship. CiteLens turns that AI visibility gap into one copy-ready action: Ensure homepage hero copy explicitly says 'AI SEO tool' and 'GEO platform' and differentiates from traditional SEO. Not another analytics dashboard. The question is simple: would you use this every week, or ignore it after one look?
 
 In this video I show you how CiteLens tracks your brand mentions across ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews — and turns missing citations into exact weekly content tasks.
 
@@ -62,7 +62,7 @@ In this video I show you how CiteLens tracks your brand mentions across ChatGPT,
 
 #### X / Twitter
 ```
-Perplexity is citing my competitors but not me.
+AI SEO is completely different from traditional SEO.
 
 CiteLens tracks where ChatGPT, Claude & Perplexity cite your competitors instead of you — and gives you exact fixes.
 
@@ -80,9 +80,9 @@ Free demo → citelens.app
 
 #### TikTok / Reels Caption
 ```
-AI SEO is completely different from traditional SEO.
+I needed to track visibility across all LLMs, not just Google.
 
-This is an MVP check, not a launch claim: ai seo geo tool. The point isn't a prettier dashboard. The point is copy-ready...
+I'm testing one thing: does llm visibility tracking turn into a real CiteLens task? We track whether this turns into a r...
 
 👉 citelens.app (link in bio)
 
@@ -91,7 +91,7 @@ This is an MVP check, not a launch claim: ai seo geo tool. The point isn't a pre
 
 #### Instagram Caption
 ```
-AI SEO is completely different from traditional SEO.
+I needed to track visibility across all LLMs, not just Google.
 
 Most brands have no idea their competitors are being cited by ChatGPT, Claude, and Perplexity instead of them.
 
@@ -106,9 +106,9 @@ Not a dashboard. A fix list.
 
 #### YouTube Description
 ```
-AI SEO is completely different from traditional SEO.
+I needed to track visibility across all LLMs, not just Google.
 
-This is an MVP check, not a launch claim: ai seo geo tool. The point isn't a prettier dashboard. The point is copy-ready work your team can ship. CiteLens turns that AI visibility gap into one copy-ready action: Ensure homepage hero copy explicitly says 'AI SEO tool' and 'GEO platform' and differentiates from traditional SEO. Not another analytics dashboard. The question is simple: would you use this every week, or ignore it after one look?
+I'm testing one thing: does llm visibility tracking turn into a real CiteLens task? We track whether this turns into a real execution queue, not vanity metrics. CiteLens turns that AI visibility gap into one copy-ready action: Create page covering LLM model differences, tracking across multiple models, and optimization strategies. Not another analytics dashboard. If this feels useful, I build the live audit next. If it feels fake, I cut it.
 
 In this video I show you how CiteLens tracks your brand mentions across ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews — and turns missing citations into exact weekly content tasks.
 
@@ -125,7 +125,7 @@ In this video I show you how CiteLens tracks your brand mentions across ChatGPT,
 
 #### X / Twitter
 ```
-AI SEO is completely different from traditional SEO.
+I needed to track visibility across all LLMs, not just Google.
 
 CiteLens tracks where ChatGPT, Claude & Perplexity cite your competitors instead of you — and gives you exact fixes.
 
@@ -143,9 +143,9 @@ Free demo → citelens.app
 
 #### TikTok / Reels Caption
 ```
-I needed to track visibility across all LLMs, not just Google.
+I never knew ChatGPT could cite my website.
 
-I don't want another dashboard. I want to know if llm visibility tracking is painful enough to fix weekly. We track whet...
+I don't want another dashboard. I want to know if how do i get chatgpt to cite my website is painful enough to fix weekl...
 
 👉 citelens.app (link in bio)
 
@@ -154,7 +154,7 @@ I don't want another dashboard. I want to know if llm visibility tracking is pai
 
 #### Instagram Caption
 ```
-I needed to track visibility across all LLMs, not just Google.
+I never knew ChatGPT could cite my website.
 
 Most brands have no idea their competitors are being cited by ChatGPT, Claude, and Perplexity instead of them.
 
@@ -169,9 +169,9 @@ Not a dashboard. A fix list.
 
 #### YouTube Description
 ```
-I needed to track visibility across all LLMs, not just Google.
+I never knew ChatGPT could cite my website.
 
-I don't want another dashboard. I want to know if llm visibility tracking is painful enough to fix weekly. We track whether this turns into a real execution queue, not vanity metrics. CiteLens turns that AI visibility gap into one copy-ready action: Create page covering LLM model differences, tracking across multiple models, and optimization strategies. Not another analytics dashboard. If this feels useful, I build the live audit next. If it feels fake, I cut it.
+I don't want another dashboard. I want to know if how do i get chatgpt to cite my website is painful enough to fix weekly. The point isn't a prettier dashboard. The point is copy-ready work your team can ship. CiteLens turns that AI visibility gap into one copy-ready action: Create guide showing how websites appear in ChatGPT citations and factors that increase visibility. Not another analytics dashboard. The question is simple: would you use this every week, or ignore it after one look?
 
 In this video I show you how CiteLens tracks your brand mentions across ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews — and turns missing citations into exact weekly content tasks.
 
@@ -188,7 +188,7 @@ In this video I show you how CiteLens tracks your brand mentions across ChatGPT,
 
 #### X / Twitter
 ```
-I needed to track visibility across all LLMs, not just Google.
+I never knew ChatGPT could cite my website.
 
 CiteLens tracks where ChatGPT, Claude & Perplexity cite your competitors instead of you — and gives you exact fixes.
 

@@ -298,5 +298,65 @@
     "cluster": "perplexity_citations",
     "hook": "I don't want another dashboard. I want to know if perplexity citations for my company is painful enough to fix weekly.",
     "script": "I don't want another dashboard. I want to know if perplexity citations for my company is painful enough to fix weekly. Most AI visibility tools stop at reporting. We force one specific content action. CiteLens turns that AI visibility gap into one copy-ready action: Create Perplexity-specific guide covering their citation display and how to optimize for it. Not another analytics dashboard. The question is simple: would you use this every week, or ignore it after one look?"
+  },
+  {
+    "date": "2026-05-07",
+    "cluster": "ai_seo_platform",
+    "hook": "I'm testing one thing: does ai seo geo tool turn into a real CiteLens task?",
+    "script": "I'm testing one thing: does ai seo geo tool turn into a real CiteLens task? If a keyword cannot produce a practical next move, it doesn't belong in the workflow. CiteLens turns that AI visibility gap into one copy-ready action: Ensure homepage hero copy explicitly says 'AI SEO tool' and 'GEO platform' and differentiates from traditional SEO. Not another analytics dashboard. If this feels useful, I build the live audit next. If it feels fake, I cut it."
+  },
+  {
+    "date": "2026-05-07",
+    "cluster": "llm_monitoring",
+    "hook": "This is an MVP check, not a launch claim: llm visibility tracking.",
+    "script": "This is an MVP check, not a launch claim: llm visibility tracking. Most AI visibility tools stop at reporting. We force one specific content action. CiteLens turns that AI visibility gap into one copy-ready action: Create page covering LLM model differences, tracking across multiple models, and optimization strategies. Not another analytics dashboard. Try the demo and tell me if this is a real weekly pain or just a neat chart."
+  },
+  {
+    "date": "2026-05-07",
+    "cluster": "chatgpt_citations",
+    "hook": "I'm testing one thing: does how do i get chatgpt to cite my website turn into a real CiteLens task?",
+    "script": "I'm testing one thing: does how do i get chatgpt to cite my website turn into a real CiteLens task? If a keyword cannot produce a practical next move, it doesn't belong in the workflow. CiteLens turns that AI visibility gap into one copy-ready action: Create guide showing how websites appear in ChatGPT citations and factors that increase visibility. Not another analytics dashboard. If this feels useful, I build the live audit next. If it feels fake, I cut it."
+  },
+  {
+    "date": "2026-05-07",
+    "cluster": "ai_brand_tracking",
+    "hook": "I'm testing one thing: does track brand visibility in ai search turn into a real CiteLens task?",
+    "script": "I'm testing one thing: does track brand visibility in ai search turn into a real CiteLens task? Most AI visibility tools stop at reporting. We force one specific content action. CiteLens turns that AI visibility gap into one copy-ready action: Build tracker dashboard showing brand mentions in ChatGPT, Claude, Perplexity, and Gemini. Not another analytics dashboard. If this feels useful, I build the live audit next. If it feels fake, I cut it."
+  },
+  {
+    "date": "2026-05-07",
+    "cluster": "brand_gap_diagnosis",
+    "hook": "This is an MVP check, not a launch claim: why doesn't chatgpt mention my brand.",
+    "script": "This is an MVP check, not a launch claim: why doesn't chatgpt mention my brand. Most AI visibility tools stop at reporting. We force one specific content action. CiteLens turns that AI visibility gap into one copy-ready action: Create diagnostic page helping users understand why their brand isn't cited and how to fix it. Not another analytics dashboard. Try the demo and tell me if this is a real weekly pain or just a neat chart."
+  },
+  {
+    "date": "2026-05-07",
+    "cluster": "startup_geo_strategy",
+    "hook": "I don't want another dashboard. I want to know if ai search optimization for startups is painful enough to fix weekly.",
+    "script": "I don't want another dashboard. I want to know if ai search optimization for startups is painful enough to fix weekly. The point isn't a prettier dashboard. The point is copy-ready work your team can ship. CiteLens turns that AI visibility gap into one copy-ready action: Create startup-focused guide with budget-friendly AI search optimization strategies. Not another analytics dashboard. The question is simple: would you use this every week, or ignore it after one look?"
+  },
+  {
+    "date": "2026-05-07",
+    "cluster": "claude_citations",
+    "hook": "This is an MVP check, not a launch claim: claude citations for my website.",
+    "script": "This is an MVP check, not a launch claim: claude citations for my website. The point isn't a prettier dashboard. The point is copy-ready work your team can ship. CiteLens turns that AI visibility gap into one copy-ready action: Create Claude citation guide covering Anthropic's citation patterns and optimization. Not another analytics dashboard. Try the demo and tell me if this is a real weekly pain or just a neat chart."
+  },
+  {
+    "date": "2026-05-07",
+    "cluster": "gemini_citations",
+    "hook": "I'm testing one thing: does google gemini ai citations turn into a real CiteLens task?",
+    "script": "I'm testing one thing: does google gemini ai citations turn into a real CiteLens task? Most AI visibility tools stop at reporting. We force one specific content action. CiteLens turns that AI visibility gap into one copy-ready action: Create guide on Gemini citations and how to position content for Google's AI overview system. Not another analytics dashboard. If this feels useful, I build the live audit next. If it feels fake, I cut it."
+  },
+  {
+    "date": "2026-05-07",
+    "cluster": "mention_monitoring",
+    "hook": "I'm testing one thing: does monitor ai answers for brand mentions turn into a real CiteLens task?",
+    "script": "I'm testing one thing: does monitor ai answers for brand mentions turn into a real CiteLens task? The point isn't a prettier dashboard. The point is copy-ready work your team can ship. CiteLens turns that AI visibility gap into one copy-ready action: Build alert/monitoring guide showing how CiteLens can track mentions over time. Not another analytics dashboard. If this feels useful, I build the live audit next. If it feels fake, I cut it."
+  },
+  {
+    "date": "2026-05-07",
+    "cluster": "perplexity_citations",
+    "hook": "I'm testing one thing: does perplexity citations for my company turn into a real CiteLens task?",
+    "script": "I'm testing one thing: does perplexity citations for my company turn into a real CiteLens task? The point isn't a prettier dashboard. The point is copy-ready work your team can ship. CiteLens turns that AI visibility gap into one copy-ready action: Create Perplexity-specific guide covering their citation display and how to optimize for it. Not another analytics dashboard. If this feels useful, I build the live audit next. If it feels fake, I cut it."
   }
 ]
