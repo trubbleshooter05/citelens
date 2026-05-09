@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "growth:intel": "tsx scripts/growth-intel.ts",
+    "ugc:daily": "tsx scripts/daily-ugc-workflow.ts"
   },
   "dependencies": {
     "next": "16.2.4",
@@ -21,6 +23,7 @@
     "@types/react-dom": "19.2.3",
     "eslint": "^9.39.4",
     "eslint-config-next": "16.2.4",
+    "tsx": "^4.21.0",
     "typescript": "6.0.3"
   },
   "engines": {

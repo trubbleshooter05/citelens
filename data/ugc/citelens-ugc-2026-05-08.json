@@ -1,0 +1,106 @@
+{
+  "date": "2026-05-08",
+  "persona": {
+    "key": "frustrated_business_owner",
+    "label": "frustrated business owner",
+    "voice": "owner who is tired of guessing why AI tools ignore their brand",
+    "pacing": "sharp hook, one breath, then slower problem-solution read",
+    "captionRhythm": "complaint, diagnosis, fix, CTA",
+    "hookStyle": "raw frustration"
+  },
+  "topic": {
+    "keyword": "AI SEO tracking for startups",
+    "pain": "Startups can publish fast, but they rarely know if AI systems can explain what they do.",
+    "promise": "CiteLens shows which prompt paths and citation gaps deserve attention first.",
+    "proofPoint": "A weekly task beats another dashboard tab nobody opens.",
+    "callToAction": "Try the workflow on one product page this week."
+  },
+  "hook": "Nothing is more annoying than seeing AI recommend everyone except you.",
+  "adCopy": "Nothing is more annoying than seeing AI recommend everyone except you. Startups can publish fast, but they rarely know if AI systems can explain what they do. CiteLens shows which prompt paths and citation gaps deserve attention first. A weekly task beats another dashboard tab nobody opens. Try the workflow on one product page this week.",
+  "voiceoverScript": "Nothing is more annoying than seeing AI recommend everyone except you.\n\nStartups can publish fast, but they rarely know if AI systems can explain what they do.\n\nThat is the whole reason CiteLens exists. CiteLens shows which prompt paths and citation gaps deserve attention first.\nA weekly task beats another dashboard tab nobody opens.\n\nTry the workflow on one product page this week.",
+  "captionText": "Nothing is more annoying than seeing AI recommend everyone except you\nStartups can publish fast, but they rarely know if AI systems can explain what they do.\nCiteLens shows which prompt paths and citation gaps deserve attention first.\nOne gap. One fix. One page to improve.\nTry the workflow on one product page this week.",
+  "shotList": [
+    {
+      "time": "0.0-1.8s",
+      "framing": "handheld selfie, face close to camera",
+      "action": "deliver the hook without a cut; slight pause at the end",
+      "caption": "Nothing is more annoying than seeing AI recommend everyone except you",
+      "notes": "strong first beat, no intro animation"
+    },
+    {
+      "time": "1.8-5.5s",
+      "framing": "screen recording or laptop over shoulder",
+      "action": "show a prompt or search result where the brand is missing",
+      "caption": "Startups can publish fast, but they rarely know if AI systems can explain what they do.",
+      "notes": "hold long enough to read; avoid jump cuts"
+    },
+    {
+      "time": "5.5-10.0s",
+      "framing": "creator back on camera with screen visible",
+      "action": "explain what CiteLens turns the gap into",
+      "caption": "CiteLens shows which prompt paths and citation gaps deserve attention first.",
+      "notes": "calm middle section; let the voice breathe"
+    },
+    {
+      "time": "10.0-15.0s",
+      "framing": "simple UI mock or checklist card",
+      "action": "show one task: rewrite a section, add proof, clarify category, or compare competitors",
+      "caption": "One gap -> one fix",
+      "notes": "single visual idea, no over-cutting"
+    },
+    {
+      "time": "15.0-20.0s",
+      "framing": "selfie close, softer ending",
+      "action": "give the CTA like a real founder asking for feedback",
+      "caption": "Try the workflow on one product page this week.",
+      "notes": "end conversational, not salesy"
+    }
+  ],
+  "remotionScene": {
+    "format": "vertical_9x16",
+    "durationSeconds": 20,
+    "style": "frustrated business owner; creator-made; natural pauses; minimal kinetic text; sharp hook, one breath, then slower problem-solution read",
+    "scenes": [
+      {
+        "id": "scene_01",
+        "durationSeconds": 1.8,
+        "visual": "handheld selfie, face close to camera: deliver the hook without a cut; slight pause at the end",
+        "voiceover": "Nothing is more annoying than seeing AI recommend everyone except you.",
+        "caption": "Nothing is more annoying than seeing AI recommend everyone except you",
+        "pacing": "beat"
+      },
+      {
+        "id": "scene_02",
+        "durationSeconds": 4,
+        "visual": "screen recording or laptop over shoulder: show a prompt or search result where the brand is missing",
+        "voiceover": "Startups can publish fast, but they rarely know if AI systems can explain what they do.",
+        "caption": "Startups can publish fast, but they rarely know if AI systems can explain what they do.",
+        "pacing": "pause"
+      },
+      {
+        "id": "scene_03",
+        "durationSeconds": 4,
+        "visual": "creator back on camera with screen visible: explain what CiteLens turns the gap into",
+        "voiceover": "That is the whole reason CiteLens exists. CiteLens shows which prompt paths and citation gaps deserve attention first.",
+        "caption": "CiteLens shows which prompt paths and citation gaps deserve attention first.",
+        "pacing": "pause"
+      },
+      {
+        "id": "scene_04",
+        "durationSeconds": 4,
+        "visual": "simple UI mock or checklist card: show one task: rewrite a section, add proof, clarify category, or compare competitors",
+        "voiceover": "A weekly task beats another dashboard tab nobody opens.",
+        "caption": "One gap -> one fix",
+        "pacing": "hold"
+      },
+      {
+        "id": "scene_05",
+        "durationSeconds": 5,
+        "visual": "selfie close, softer ending: give the CTA like a real founder asking for feedback",
+        "voiceover": "Try the workflow on one product page this week.",
+        "caption": "Try the workflow on one product page this week.",
+        "pacing": "pause"
+      }
+    ]
+  }
+}
