@@ -667,3 +667,214 @@ h2 {
     font-size: 44px;
   }
 }
+
+/* --- SEO landing guides (GEO / AI search) --- */
+
+.seo-page h1 {
+  font-size: clamp(36px, 5vw, 56px);
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+  margin-bottom: 18px;
+  max-width: 920px;
+}
+
+.seo-page .landing-intro {
+  margin-bottom: 28px;
+  padding: 28px 34px;
+}
+
+.seo-page .landing-intro > p.lead {
+  color: var(--muted);
+  font-size: 19px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  max-width: 760px;
+}
+
+.landing-body.dashboard {
+  margin-top: 24px;
+}
+
+.landing-body h2 {
+  font-size: clamp(26px, 3vw, 36px);
+  margin-bottom: 14px;
+  margin-top: 28px;
+}
+
+.landing-body h2:first-child {
+  margin-top: 0;
+}
+
+.landing-body h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 22px;
+}
+
+.landing-body p,
+.landing-body li {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.landing-body p {
+  margin-bottom: 14px;
+}
+
+.landing-body ul,
+.landing-body ol {
+  margin: 0 0 18px;
+  padding-left: 22px;
+}
+
+.landing-body li {
+  margin-bottom: 8px;
+}
+
+.landing-body a.inline-guide {
+  color: var(--accent);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.example-callout {
+  background: linear-gradient(135deg, #f0f4ff, #ffffff);
+  border: 1px solid #c9d7ff;
+  border-radius: 16px;
+  margin: 22px 0;
+  padding: 18px 20px;
+}
+
+.example-callout strong {
+  color: var(--ink);
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.example-callout p {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.platform-callouts {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  margin: 20px 0 8px;
+}
+
+.platform-callouts article {
+  background: linear-gradient(135deg, #f8fafc, #ffffff);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.platform-callouts h3 {
+  color: var(--ink);
+  font-size: 15px;
+  margin: 0 0 8px;
+}
+
+.platform-callouts p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.landing-faq {
+  margin-top: 28px;
+}
+
+.faq-list {
+  margin: 20px 0 0;
+}
+
+.faq-item {
+  border-top: 1px solid var(--line);
+  padding: 18px 0;
+}
+
+.faq-item:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.faq-item dt {
+  color: var(--ink);
+  font-size: 17px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.faq-item dd {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.landing-cta-block {
+  margin-top: 36px;
+}
+
+.seo-footer {
+  margin-top: 48px;
+}
+
+.seo-related-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  margin: 16px 0 24px;
+}
+
+.seo-related-card {
+  background: linear-gradient(135deg, #f8fafc, #ffffff);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.seo-related-card:hover {
+  border-color: rgba(49, 91, 255, 0.35);
+  box-shadow: 0 12px 28px rgba(49, 91, 255, 0.08);
+}
+
+.seo-related-card strong {
+  color: var(--ink);
+  font-size: 15px;
+}
+
+.seo-related-card span {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.seo-back-home {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.seo-back-home:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 620px) {
+  .seo-page h1 {
+    font-size: 32px;
+  }
+}

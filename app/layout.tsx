@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://citelens.app"),
   title: "CiteLens | AI Citation Action Engine",
   description:
     "See why AI tools cite competitors instead of you, then get exact weekly content fixes to improve AI visibility.",
