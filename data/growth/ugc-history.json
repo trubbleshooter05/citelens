@@ -2,66 +2,6 @@
   {
     "date": "2026-05-08",
     "cluster": "ai_seo_platform",
-    "hook": "POV: you finally searched \"ai seo geo tool\"… and realized AI answers don't cite you. That sting is the whole point.",
-    "script": "POV: you finally searched \"ai seo geo tool\"… and realized AI answers don't cite you. That sting is the whole point. If a keyword can't become one tactical paragraph your team can publish this week, I don't want it in the workflow. CiteLens compresses that gap into one copy-ready move: Ensure homepage hero copy explicitly says 'AI SEO tool' and 'GEO platform' and differentiates from traditional SEO. Not more charts — one execution. Try it once this week. If you wouldn't open it again on Monday, tell me and I'll delete the feature."
-  },
-  {
-    "date": "2026-05-08",
-    "cluster": "llm_monitoring",
-    "hook": "Stop. If you're only watching Google for \"llm visibility tracking\", you're auditing the wrong surface — AI already decided.",
-    "script": "Stop. If you're only watching Google for \"llm visibility tracking\", you're auditing the wrong surface — AI already decided. The bar is stupid simple: does this turn into a shipped change, or is it just another dashboard tab? CiteLens compresses that gap into one copy-ready move: Create page covering LLM model differences, tracking across multiple models, and optimization strategies. Not more charts — one execution. Honest ask: is this a weekly habit or a one-time novelty? I need the brutal answer."
-  },
-  {
-    "date": "2026-05-08",
-    "cluster": "chatgpt_citations",
-    "hook": "POV: you finally searched \"how do i get chatgpt to cite my website\"… and realized AI answers don't cite you. That sting is the whole point.",
-    "script": "POV: you finally searched \"how do i get chatgpt to cite my website\"… and realized AI answers don't cite you. That sting is the whole point. If a keyword can't become one tactical paragraph your team can publish this week, I don't want it in the workflow. CiteLens compresses that gap into one copy-ready move: Create guide showing how websites appear in ChatGPT citations and factors that increase visibility. Not more charts — one execution. Try it once this week. If you wouldn't open it again on Monday, tell me and I'll delete the feature."
-  },
-  {
-    "date": "2026-05-08",
-    "cluster": "ai_brand_tracking",
-    "hook": "POV: you finally searched \"track brand visibility in ai search\"… and realized AI answers don't cite you. That sting is the whole point.",
-    "script": "POV: you finally searched \"track brand visibility in ai search\"… and realized AI answers don't cite you. That sting is the whole point. The bar is stupid simple: does this turn into a shipped change, or is it just another dashboard tab? CiteLens compresses that gap into one copy-ready move: Build tracker dashboard showing brand mentions in ChatGPT, Claude, Perplexity, and Gemini. Not more charts — one execution. Try it once this week. If you wouldn't open it again on Monday, tell me and I'll delete the feature."
-  },
-  {
-    "date": "2026-05-08",
-    "cluster": "brand_gap_diagnosis",
-    "hook": "Stop. If you're only watching Google for \"why doesn't chatgpt mention my brand\", you're auditing the wrong surface — AI already decided.",
-    "script": "Stop. If you're only watching Google for \"why doesn't chatgpt mention my brand\", you're auditing the wrong surface — AI already decided. The bar is stupid simple: does this turn into a shipped change, or is it just another dashboard tab? CiteLens compresses that gap into one copy-ready move: Create diagnostic page helping users understand why their brand isn't cited and how to fix it. Not more charts — one execution. Honest ask: is this a weekly habit or a one-time novelty? I need the brutal answer."
-  },
-  {
-    "date": "2026-05-08",
-    "cluster": "startup_geo_strategy",
-    "hook": "Nobody warned me \"ai search optimization for startups\" was a different game than classic SEO. So I built the weekly fix list anyway.",
-    "script": "Nobody warned me \"ai search optimization for startups\" was a different game than classic SEO. So I built the weekly fix list anyway. Here's what bugs me about most GEO tools — they stop at a score. Cool chart. Zero shipped copy. CiteLens compresses that gap into one copy-ready move: Create startup-focused guide with budget-friendly AI search optimization strategies. Not more charts — one execution. Demo's live — roast it. If the task brief feels real, I build live audits next. If it's fluff, I kill it."
-  },
-  {
-    "date": "2026-05-08",
-    "cluster": "claude_citations",
-    "hook": "Stop. If you're only watching Google for \"claude citations for my website\", you're auditing the wrong surface — AI already decided.",
-    "script": "Stop. If you're only watching Google for \"claude citations for my website\", you're auditing the wrong surface — AI already decided. Here's what bugs me about most GEO tools — they stop at a score. Cool chart. Zero shipped copy. CiteLens compresses that gap into one copy-ready move: Create Claude citation guide covering Anthropic's citation patterns and optimization. Not more charts — one execution. Honest ask: is this a weekly habit or a one-time novelty? I need the brutal answer."
-  },
-  {
-    "date": "2026-05-08",
-    "cluster": "gemini_citations",
-    "hook": "POV: you finally searched \"google gemini ai citations\"… and realized AI answers don't cite you. That sting is the whole point.",
-    "script": "POV: you finally searched \"google gemini ai citations\"… and realized AI answers don't cite you. That sting is the whole point. The bar is stupid simple: does this turn into a shipped change, or is it just another dashboard tab? CiteLens compresses that gap into one copy-ready move: Create guide on Gemini citations and how to position content for Google's AI overview system. Not more charts — one execution. Try it once this week. If you wouldn't open it again on Monday, tell me and I'll delete the feature."
-  },
-  {
-    "date": "2026-05-08",
-    "cluster": "mention_monitoring",
-    "hook": "POV: you finally searched \"monitor ai answers for brand mentions\"… and realized AI answers don't cite you. That sting is the whole point.",
-    "script": "POV: you finally searched \"monitor ai answers for brand mentions\"… and realized AI answers don't cite you. That sting is the whole point. Here's what bugs me about most GEO tools — they stop at a score. Cool chart. Zero shipped copy. CiteLens compresses that gap into one copy-ready move: Build alert/monitoring guide showing how CiteLens can track mentions over time. Not more charts — one execution. Try it once this week. If you wouldn't open it again on Monday, tell me and I'll delete the feature."
-  },
-  {
-    "date": "2026-05-08",
-    "cluster": "perplexity_citations",
-    "hook": "POV: you finally searched \"perplexity citations for my company\"… and realized AI answers don't cite you. That sting is the whole point.",
-    "script": "POV: you finally searched \"perplexity citations for my company\"… and realized AI answers don't cite you. That sting is the whole point. Here's what bugs me about most GEO tools — they stop at a score. Cool chart. Zero shipped copy. CiteLens compresses that gap into one copy-ready move: Create Perplexity-specific guide covering their citation display and how to optimize for it. Not more charts — one execution. Try it once this week. If you wouldn't open it again on Monday, tell me and I'll delete the feature."
-  },
-  {
-    "date": "2026-05-08",
-    "cluster": "ai_seo_platform",
     "hook": "Stop. If you're only watching Google for \"ai seo geo tool\", you're auditing the wrong surface — AI already decided.",
     "script": "Stop. If you're only watching Google for \"ai seo geo tool\", you're auditing the wrong surface — AI already decided. The bar is stupid simple: does this turn into a shipped change, or is it just another dashboard tab? CiteLens compresses that gap into one copy-ready move: Ensure homepage hero copy explicitly says 'AI SEO tool' and 'GEO platform' and differentiates from traditional SEO. Not more charts — one execution. Try it once this week. If you wouldn't open it again on Monday, tell me and I'll delete the feature."
   },
@@ -718,5 +658,65 @@
     "cluster": "brand_gap_diagnosis",
     "hook": "Nobody warned me \"why doesn't chatgpt mention my brand\" was a different game than classic SEO. So I built the weekly fix list anyway.",
     "script": "Nobody warned me \"why doesn't chatgpt mention my brand\" was a different game than classic SEO. So I built the weekly fix list anyway. I'm not hunting vanity metrics. I want a queue: one citation gap, one paragraph you can paste into the page. CiteLens compresses that gap into one copy-ready move: Create diagnostic page helping users understand why their brand isn't cited and how to fix it. Not more charts — one execution. Demo's live — roast it. If the task brief feels real, I build live audits next. If it's fluff, I kill it."
+  },
+  {
+    "date": "2026-05-19",
+    "cluster": "startup_geo_strategy",
+    "hook": "Stop. If you're only watching Google for \"ai search optimization for startups\", you're auditing the wrong surface — AI already decided.",
+    "script": "Stop. If you're only watching Google for \"ai search optimization for startups\", you're auditing the wrong surface — AI already decided. I'm not hunting vanity metrics. I want a queue: one citation gap, one paragraph you can paste into the page. CiteLens compresses that gap into one copy-ready move: Create startup-focused guide with budget-friendly AI search optimization strategies. Not more charts — one execution. Honest ask: is this a weekly habit or a one-time novelty? I need the brutal answer."
+  },
+  {
+    "date": "2026-05-19",
+    "cluster": "claude_citations",
+    "hook": "POV: you finally searched \"claude citations for my website\"… and realized AI answers don't cite you. That sting is the whole point.",
+    "script": "POV: you finally searched \"claude citations for my website\"… and realized AI answers don't cite you. That sting is the whole point. I'm not hunting vanity metrics. I want a queue: one citation gap, one paragraph you can paste into the page. CiteLens compresses that gap into one copy-ready move: Create Claude citation guide covering Anthropic's citation patterns and optimization. Not more charts — one execution. Try it once this week. If you wouldn't open it again on Monday, tell me and I'll delete the feature."
+  },
+  {
+    "date": "2026-05-19",
+    "cluster": "gemini_citations",
+    "hook": "Nobody warned me \"google gemini ai citations\" was a different game than classic SEO. So I built the weekly fix list anyway.",
+    "script": "Nobody warned me \"google gemini ai citations\" was a different game than classic SEO. So I built the weekly fix list anyway. If a keyword can't become one tactical paragraph your team can publish this week, I don't want it in the workflow. CiteLens compresses that gap into one copy-ready move: Create guide on Gemini citations and how to position content for Google's AI overview system. Not more charts — one execution. Demo's live — roast it. If the task brief feels real, I build live audits next. If it's fluff, I kill it."
+  },
+  {
+    "date": "2026-05-19",
+    "cluster": "llm_monitoring",
+    "hook": "POV: you finally searched \"llm visibility tracking\"… and realized AI answers don't cite you. That sting is the whole point.",
+    "script": "POV: you finally searched \"llm visibility tracking\"… and realized AI answers don't cite you. That sting is the whole point. If a keyword can't become one tactical paragraph your team can publish this week, I don't want it in the workflow. CiteLens compresses that gap into one copy-ready move: Create page covering LLM model differences, tracking across multiple models, and optimization strategies. Not more charts — one execution. Try it once this week. If you wouldn't open it again on Monday, tell me and I'll delete the feature."
+  },
+  {
+    "date": "2026-05-19",
+    "cluster": "mention_monitoring",
+    "hook": "Nobody warned me \"monitor ai answers for brand mentions\" was a different game than classic SEO. So I built the weekly fix list anyway.",
+    "script": "Nobody warned me \"monitor ai answers for brand mentions\" was a different game than classic SEO. So I built the weekly fix list anyway. I'm not hunting vanity metrics. I want a queue: one citation gap, one paragraph you can paste into the page. CiteLens compresses that gap into one copy-ready move: Build alert/monitoring guide showing how CiteLens can track mentions over time. Not more charts — one execution. Demo's live — roast it. If the task brief feels real, I build live audits next. If it's fluff, I kill it."
+  },
+  {
+    "date": "2026-05-19",
+    "cluster": "perplexity_citations",
+    "hook": "Nobody warned me \"perplexity citations for my company\" was a different game than classic SEO. So I built the weekly fix list anyway.",
+    "script": "Nobody warned me \"perplexity citations for my company\" was a different game than classic SEO. So I built the weekly fix list anyway. I'm not hunting vanity metrics. I want a queue: one citation gap, one paragraph you can paste into the page. CiteLens compresses that gap into one copy-ready move: Create Perplexity-specific guide covering their citation display and how to optimize for it. Not more charts — one execution. Demo's live — roast it. If the task brief feels real, I build live audits next. If it's fluff, I kill it."
+  },
+  {
+    "date": "2026-05-19",
+    "cluster": "ai_seo_platform",
+    "hook": "Nobody warned me \"ai seo geo tool\" was a different game than classic SEO. So I built the weekly fix list anyway.",
+    "script": "Nobody warned me \"ai seo geo tool\" was a different game than classic SEO. So I built the weekly fix list anyway. The bar is stupid simple: does this turn into a shipped change, or is it just another dashboard tab? CiteLens compresses that gap into one copy-ready move: Ensure homepage hero copy explicitly says 'AI SEO tool' and 'GEO platform' and differentiates from traditional SEO. Not more charts — one execution. Demo's live — roast it. If the task brief feels real, I build live audits next. If it's fluff, I kill it."
+  },
+  {
+    "date": "2026-05-19",
+    "cluster": "chatgpt_citations",
+    "hook": "Nobody warned me \"how do i get chatgpt to cite my website\" was a different game than classic SEO. So I built the weekly fix list anyway.",
+    "script": "Nobody warned me \"how do i get chatgpt to cite my website\" was a different game than classic SEO. So I built the weekly fix list anyway. The bar is stupid simple: does this turn into a shipped change, or is it just another dashboard tab? CiteLens compresses that gap into one copy-ready move: Create guide showing how websites appear in ChatGPT citations and factors that increase visibility. Not more charts — one execution. Demo's live — roast it. If the task brief feels real, I build live audits next. If it's fluff, I kill it."
+  },
+  {
+    "date": "2026-05-19",
+    "cluster": "ai_brand_tracking",
+    "hook": "Nobody warned me \"track brand visibility in ai search\" was a different game than classic SEO. So I built the weekly fix list anyway.",
+    "script": "Nobody warned me \"track brand visibility in ai search\" was a different game than classic SEO. So I built the weekly fix list anyway. If a keyword can't become one tactical paragraph your team can publish this week, I don't want it in the workflow. CiteLens compresses that gap into one copy-ready move: Build tracker dashboard showing brand mentions in ChatGPT, Claude, Perplexity, and Gemini. Not more charts — one execution. Demo's live — roast it. If the task brief feels real, I build live audits next. If it's fluff, I kill it."
+  },
+  {
+    "date": "2026-05-19",
+    "cluster": "brand_gap_diagnosis",
+    "hook": "POV: you finally searched \"why doesn't chatgpt mention my brand\"… and realized AI answers don't cite you. That sting is the whole point.",
+    "script": "POV: you finally searched \"why doesn't chatgpt mention my brand\"… and realized AI answers don't cite you. That sting is the whole point. If a keyword can't become one tactical paragraph your team can publish this week, I don't want it in the workflow. CiteLens compresses that gap into one copy-ready move: Create diagnostic page helping users understand why their brand isn't cited and how to fix it. Not more charts — one execution. Try it once this week. If you wouldn't open it again on Monday, tell me and I'll delete the feature."
   }
 ]
