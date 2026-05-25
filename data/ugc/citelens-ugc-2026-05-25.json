@@ -1,0 +1,106 @@
+{
+  "date": "2026-05-25",
+  "persona": {
+    "key": "agency_consultant",
+    "label": "agency consultant",
+    "voice": "consultant turning a vague client problem into a weekly deliverable",
+    "pacing": "consultative hook, clear three-part breakdown, confident close",
+    "captionRhythm": "client pain, audit finding, deliverable, next step",
+    "hookStyle": "client-call moment"
+  },
+  "topic": {
+    "keyword": "GEO platform for agencies",
+    "pain": "Clients ask about AI search, but most reports stop at screenshots and vague advice.",
+    "promise": "CiteLens packages AI visibility into a repeatable client action plan.",
+    "proofPoint": "Every audit should end with the next paragraph, section, or page to ship.",
+    "callToAction": "Turn one client prompt into one publishable recommendation."
+  },
+  "hook": "AI visibility reports are useless unless they become a client task.",
+  "adCopy": "AI visibility reports are useless unless they become a client task. Clients ask about AI search, but most reports stop at screenshots and vague advice. CiteLens packages AI visibility into a repeatable client action plan. Every audit should end with the next paragraph, section, or page to ship. Turn one client prompt into one publishable recommendation.",
+  "voiceoverScript": "AI visibility reports are useless unless they become a client task.\n\nClients ask about AI search, but most reports stop at screenshots and vague advice.\n\nThat is the whole reason CiteLens exists. CiteLens packages AI visibility into a repeatable client action plan.\nEvery audit should end with the next paragraph, section, or page to ship.\n\nTurn one client prompt into one publishable recommendation.",
+  "captionText": "AI visibility reports are useless unless they become a client task\nClients ask about AI search, but most reports stop at screenshots and vague advice.\nCiteLens packages AI visibility into a repeatable client action plan.\nOne gap. One fix. One page to improve.\nTurn one client prompt into one publishable recommendation.",
+  "shotList": [
+    {
+      "time": "0.0-1.8s",
+      "framing": "handheld selfie, face close to camera",
+      "action": "deliver the hook without a cut; slight pause at the end",
+      "caption": "AI visibility reports are useless unless they become a client task",
+      "notes": "strong first beat, no intro animation"
+    },
+    {
+      "time": "1.8-5.5s",
+      "framing": "screen recording or laptop over shoulder",
+      "action": "show a prompt or search result where the brand is missing",
+      "caption": "Clients ask about AI search, but most reports stop at screenshots and vague advice.",
+      "notes": "hold long enough to read; avoid jump cuts"
+    },
+    {
+      "time": "5.5-10.0s",
+      "framing": "creator back on camera with screen visible",
+      "action": "explain what CiteLens turns the gap into",
+      "caption": "CiteLens packages AI visibility into a repeatable client action plan.",
+      "notes": "calm middle section; let the voice breathe"
+    },
+    {
+      "time": "10.0-15.0s",
+      "framing": "simple UI mock or checklist card",
+      "action": "show one task: rewrite a section, add proof, clarify category, or compare competitors",
+      "caption": "One gap -> one fix",
+      "notes": "single visual idea, no over-cutting"
+    },
+    {
+      "time": "15.0-20.0s",
+      "framing": "selfie close, softer ending",
+      "action": "give the CTA like a real founder asking for feedback",
+      "caption": "Turn one client prompt into one publishable recommendation.",
+      "notes": "end conversational, not salesy"
+    }
+  ],
+  "remotionScene": {
+    "format": "vertical_9x16",
+    "durationSeconds": 20,
+    "style": "agency consultant; creator-made; natural pauses; minimal kinetic text; consultative hook, clear three-part breakdown, confident close",
+    "scenes": [
+      {
+        "id": "scene_01",
+        "durationSeconds": 1.8,
+        "visual": "handheld selfie, face close to camera: deliver the hook without a cut; slight pause at the end",
+        "voiceover": "AI visibility reports are useless unless they become a client task.",
+        "caption": "AI visibility reports are useless unless they become a client task",
+        "pacing": "beat"
+      },
+      {
+        "id": "scene_02",
+        "durationSeconds": 4,
+        "visual": "screen recording or laptop over shoulder: show a prompt or search result where the brand is missing",
+        "voiceover": "Clients ask about AI search, but most reports stop at screenshots and vague advice.",
+        "caption": "Clients ask about AI search, but most reports stop at screenshots and vague advice.",
+        "pacing": "pause"
+      },
+      {
+        "id": "scene_03",
+        "durationSeconds": 4,
+        "visual": "creator back on camera with screen visible: explain what CiteLens turns the gap into",
+        "voiceover": "That is the whole reason CiteLens exists. CiteLens packages AI visibility into a repeatable client action plan.",
+        "caption": "CiteLens packages AI visibility into a repeatable client action plan.",
+        "pacing": "pause"
+      },
+      {
+        "id": "scene_04",
+        "durationSeconds": 4,
+        "visual": "simple UI mock or checklist card: show one task: rewrite a section, add proof, clarify category, or compare competitors",
+        "voiceover": "Every audit should end with the next paragraph, section, or page to ship.",
+        "caption": "One gap -> one fix",
+        "pacing": "hold"
+      },
+      {
+        "id": "scene_05",
+        "durationSeconds": 5,
+        "visual": "selfie close, softer ending: give the CTA like a real founder asking for feedback",
+        "voiceover": "Turn one client prompt into one publishable recommendation.",
+        "caption": "Turn one client prompt into one publishable recommendation.",
+        "pacing": "pause"
+      }
+    ]
+  }
+}
