@@ -2,10 +2,12 @@ import type { MetadataRoute } from "next";
 
 import { SITE_URL, seoGuideRoutes } from "@/lib/site";
 
+const lastModified = new Date("2026-05-25T00:00:00.000Z");
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const guides = seoGuideRoutes.map((path) => ({
     url: `${SITE_URL}${path}`,
-    lastModified: new Date(),
+    lastModified,
     changeFrequency: "weekly" as const,
     priority: 0.85
   }));
@@ -13,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: SITE_URL,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "weekly",
       priority: 1
     },

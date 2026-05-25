@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { trackConversion } from "@/components/Analytics";
 
 // To activate: sign up at formspree.io (free), create a form, paste your form ID below
 const FORMSPREE_ID = "xbdwogda";
@@ -20,6 +21,18 @@ export function EmailCapture() {
         body: JSON.stringify({ email }),
       });
       if (res.ok) {
+        const eventKey = `citelens_email_lead_${email.trim().toLowerCase()}`;
+        if (!window.sessionStorage.getItem(eventKey)) {
+          window.sessionStorage.setItem(eventKey, "1");
+          trackConversion("generate_lead", {
+            method: "sample_report_form",
+            item_name: "CiteLens sample audit report",
+            item_id: "sample_report",
+            quantity: 1,
+            value: 0,
+            currency: "USD",
+          });
+        }
         setStatus("done");
       } else {
         setStatus("error");

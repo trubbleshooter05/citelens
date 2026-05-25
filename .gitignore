@@ -2,6 +2,7 @@
 node_modules/
 out/
 demo/
+.claude/worktrees/
 *.tsbuildinfo
 .env*
 !.env.example
