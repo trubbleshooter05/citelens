@@ -3,6 +3,10 @@ import { EmailCapture } from "@/components/EmailCapture";
 import { GeoAuditForm } from "@/components/GeoAuditForm";
 import { platforms, prompts, weeklyActions } from "@/data/geo";
 
+const priorityTask = weeklyActions[0];
+const competitorCount = new Set(prompts.flatMap((p) => p.competitors)).size;
+const pageCount = new Set(prompts.map((p) => p.targetPage)).size;
+
 export default function Home() {
   return (
     <main className="app-shell">
@@ -14,7 +18,7 @@ export default function Home() {
         <nav>
           <a href="#dashboard">Sample</a>
           <a href="#pricing">Pricing</a>
-          <a href="#audit">Audit</a>
+          <a href="#waitlist">Waitlist</a>
         </nav>
       </header>
 
@@ -32,8 +36,7 @@ export default function Home() {
             backlog—plus an <strong>AI SEO tool</strong> lens on ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews.
           </p>
           <p className="demo-note">
-            Early access. The report below is a real example (CardSnap). It does not
-            change when you type a URL yet.
+            Early access. The report below is a static CardSnap example. Live audits for your site are waitlist-only.
           </p>
           <GeoAuditForm />
         </div>
@@ -44,12 +47,9 @@ export default function Home() {
             <b>Weekly</b>
           </div>
           <div className="urgent-fix prominent-fix">
-            <b>Actual fix list (sample)</b>
-            <span>
-              Do this first: add a comparison table on pricing — competitors cite turnaround, guarantees, and fees in one
-              scannable block your models can quote.
-            </span>
-            <small>Copy-ready bullets ship in each weekly brief—not just “improve EEAT.”</small>
+            <b>Do this first (sample)</b>
+            <span>{priorityTask.title}</span>
+            <small>{priorityTask.evidence}</small>
           </div>
           <div className="score-ring muted-score">
             <strong>34%</strong>
@@ -82,31 +82,30 @@ export default function Home() {
         <div className="this-week">
           <div>
             <span>Do this first</span>
-            <h3>Create a competitor comparison page</h3>
+            <h3>{priorityTask.title}</h3>
             <p>
-              AI tools cite PSA and TAG because they answer pricing, turnaround,
-              guarantees, and trust signals in one scannable page. Copy the brief and hand it to a writer or assistant.
+              {priorityTask.evidence} {priorityTask.fix} Copy the brief and hand it to a writer or assistant.
             </p>
           </div>
-          <CopyTaskBriefButton task={weeklyActions[0]} />
+          <CopyTaskBriefButton task={priorityTask} />
         </div>
 
         <div className="metrics">
           <article>
             <span>Tracked prompts</span>
-            <strong>25</strong>
+            <strong>{prompts.length}</strong>
           </article>
           <article>
             <span>Pages to update</span>
-            <strong>6</strong>
+            <strong>{pageCount}</strong>
           </article>
           <article>
             <span>Competitors found</span>
-            <strong>11</strong>
+            <strong>{competitorCount}</strong>
           </article>
           <article>
             <span>Priority tasks</span>
-            <strong>4</strong>
+            <strong>{weeklyActions.length}</strong>
           </article>
         </div>
 
@@ -149,6 +148,7 @@ export default function Home() {
         <div>
           <p className="eyebrow">Simple pricing</p>
           <h2>Built for SMBs that need execution, not another analytics dashboard.</h2>
+          <p className="section-note">Planned pricing at launch. Join the waitlist for early-access pilot rates.</p>
         </div>
         <div className="plans">
           <article>
@@ -169,17 +169,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="email-banner">
-        <div className="email-banner-inner">
-          <div>
-            <strong>Want this for your site?</strong>
-            <p>Live prompt tracking is in early access. Join the waitlist and we&apos;ll reach out.</p>
-          </div>
-          <EmailCapture />
-        </div>
-      </section>
-
-      <section className="final-cta" id="audit">
+      <section className="final-cta" id="waitlist">
         <h2>Live audits opening soon</h2>
         <p>
           The sample report above shows the format. Waitlist members get first access
