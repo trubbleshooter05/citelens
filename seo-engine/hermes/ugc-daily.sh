@@ -41,15 +41,15 @@ fi
 echo "[$(date)] Running ugc:daily..."
 npm run ugc:daily -- --date="${DATE}"
 
-VIDEO_COUNT=$(ls -1 "${CITELENS_DIR}/video/out/citelens-"*"-${DATE}.mp4" 2>/dev/null | wc -l | tr -d ' ')
+VIDEO_COUNT=$(ls -1 "${CITELENS_DIR}/video/out/citelens-ugc-${DATE}.mp4" 2>/dev/null | wc -l | tr -d ' ')
 echo "=== CiteLens UGC Daily Done ==="
 echo "Date: ${DATE}"
-echo "Videos rendered: ${VIDEO_COUNT}/3"
+echo "Videos rendered: ${VIDEO_COUNT}/1"
 echo "Approval: docs/growth/daily-ugc-approval-${DATE}.md"
-echo "Videos: video/out/citelens-{competitor-hook,task-brief,score-reveal}-${DATE}.mp4"
+echo "Video: video/out/citelens-ugc-${DATE}.mp4"
 echo "Log: ${LOG_FILE}"
 
-if [[ "${VIDEO_COUNT}" -lt 3 ]]; then
-  echo "ERROR: expected 3 videos, got ${VIDEO_COUNT}"
+if [[ "${VIDEO_COUNT}" -lt 1 ]]; then
+  echo "ERROR: expected 1 video, got ${VIDEO_COUNT}"
   exit 1
 fi
