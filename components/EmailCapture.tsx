@@ -3,7 +3,6 @@
 import { FormEvent, useState } from "react";
 import { trackConversion } from "@/components/Analytics";
 
-// To activate: sign up at formspree.io (free), create a form, paste your form ID below
 const FORMSPREE_ID = "xbdwogda";
 
 export function EmailCapture() {
@@ -25,9 +24,9 @@ export function EmailCapture() {
         if (!window.sessionStorage.getItem(eventKey)) {
           window.sessionStorage.setItem(eventKey, "1");
           trackConversion("generate_lead", {
-            method: "sample_report_form",
-            item_name: "CiteLens sample audit report",
-            item_id: "sample_report",
+            method: "waitlist_form",
+            item_name: "CiteLens waitlist",
+            item_id: "waitlist",
             quantity: 1,
             value: 0,
             currency: "USD",
@@ -46,7 +45,7 @@ export function EmailCapture() {
     return (
       <div className="email-capture">
         <p className="email-capture-confirm">
-          ✓ You&apos;re on the list — we&apos;ll send your sample report within 24 hours.
+          Got it. We&apos;ll email you when live audits open for your site.
         </p>
       </div>
     );
@@ -55,7 +54,7 @@ export function EmailCapture() {
   return (
     <div className="email-capture">
       <p className="email-capture-label">
-        Get a sample audit report for your site — free.
+        Want a live audit on your site? Join the waitlist.
       </p>
       <form className="email-capture-form" onSubmit={handleSubmit}>
         <input
@@ -66,11 +65,11 @@ export function EmailCapture() {
           onChange={(e) => setEmail(e.target.value)}
         />
         <button type="submit" disabled={status === "loading"}>
-          {status === "loading" ? "Sending…" : "Send me the report"}
+          {status === "loading" ? "Sending…" : "Join waitlist"}
         </button>
       </form>
       {status === "error" && (
-        <p className="email-capture-error">Something went wrong — email hello@citelens.app directly.</p>
+        <p className="email-capture-error">Something went wrong. Email hello@citelens.app directly.</p>
       )}
     </div>
   );
