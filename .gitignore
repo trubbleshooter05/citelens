@@ -12,3 +12,7 @@ pnpm-debug.log*
 .DS_Store
 .vercel
 .env*.local
+logs/
+.ugc-daily.lock
+video/out/
+video/public/audio/daily/

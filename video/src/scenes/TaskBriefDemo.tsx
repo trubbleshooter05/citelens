@@ -98,7 +98,7 @@ export function TaskBriefDemo() {
   const frame = useCurrentFrame();
   return (
     <AbsoluteFill style={{ background: colors.bg, fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif", overflow: "hidden" }}>
-      <Audio src={staticFile("audio/task Brief.mp3")} />
+      <Audio src={staticFile("audio/task-brief.mp3")} />
       {SCENES.map((s) => (
         <Sequence key={s.from} from={s.from} durationInFrames={s.dur}>
           <AbsoluteFill style={{ background: s.bg }}>

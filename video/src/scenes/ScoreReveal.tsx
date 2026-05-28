@@ -145,7 +145,7 @@ export function ScoreReveal() {
   const frame = useCurrentFrame();
   return (
     <AbsoluteFill style={{ background: colors.bg, fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif", overflow: "hidden" }}>
-      <Audio src={staticFile("audio/Validation Hook.mp3")} />
+      <Audio src={staticFile("audio/validation-hook.mp3")} />
       {SCENES.map((s) => (
         <Sequence key={s.from} from={s.from} durationInFrames={s.dur}>
           <AbsoluteFill style={{ background: s.bg }}>
