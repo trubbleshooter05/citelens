@@ -12,7 +12,7 @@ export default function Home() {
           CiteLens
         </div>
         <nav>
-          <a href="#dashboard">Demo</a>
+          <a href="#dashboard">Sample</a>
           <a href="#pricing">Pricing</a>
           <a href="#audit">Audit</a>
         </nav>
@@ -32,15 +32,16 @@ export default function Home() {
             backlog—plus an <strong>AI SEO tool</strong> lens on ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews.
           </p>
           <p className="demo-note">
-            MVP demo uses sample report data. Enter any brand or URL to preview the action report—not just the score ring.
+            Early access. The report below is a real example (CardSnap). It does not
+            change when you type a URL yet.
           </p>
           <GeoAuditForm />
         </div>
 
         <aside className="hero-product">
           <div className="product-top">
-            <span>Weekly delivery</span>
-            <b>Task brief + fix list</b>
+            <span>CardSnap · sample report</span>
+            <b>Weekly</b>
           </div>
           <div className="urgent-fix prominent-fix">
             <b>Actual fix list (sample)</b>
@@ -70,8 +71,12 @@ export default function Home() {
 
       <section className="dashboard" id="dashboard">
         <div className="section-head">
-          <p className="eyebrow">Demo action report</p>
+          <p className="eyebrow">Sample action report</p>
           <h2>Not just monitoring. A weekly AI citation task list.</h2>
+          <p className="section-note">
+            Static example for CardSnap. This is what a weekly report looks like:
+            which prompts you lose, who AI cites instead, and what to fix on each page.
+          </p>
         </div>
 
         <div className="this-week">
@@ -167,20 +172,20 @@ export default function Home() {
       <section className="email-banner">
         <div className="email-banner-inner">
           <div>
-            <strong>Not ready to comment?</strong>
-            <p>Get a sample CiteLens report sent to your inbox — no sign-up friction, no pitch.</p>
+            <strong>Want this for your site?</strong>
+            <p>Live prompt tracking is in early access. Join the waitlist and we&apos;ll reach out.</p>
           </div>
           <EmailCapture />
         </div>
       </section>
 
       <section className="final-cta" id="audit">
-        <h2>Want a sample AI citation action report?</h2>
+        <h2>Live audits opening soon</h2>
         <p>
-          Preview the workflow with sample data. Early access users get live
-          prompt checks and copy-ready task briefs for their own site.
+          The sample report above shows the format. Waitlist members get first access
+          to prompt tracking and copy-ready task briefs for their own site.
         </p>
-        <GeoAuditForm />
+        <EmailCapture />
       </section>
     </main>
   );
