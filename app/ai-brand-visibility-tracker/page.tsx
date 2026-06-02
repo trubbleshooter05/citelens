@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { GeoAuditForm } from "@/components/GeoAuditForm";
+import { buildPageMetadata } from "@/lib/seo-metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
+  path: "/ai-brand-visibility-tracker",
   title: "AI Brand Visibility Tracker | CiteLens",
-  description: "Track brand visibility in AI search by checking whether ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews mention your brand or send buyers to competitors.",
-};
+  description:
+    "Track brand visibility in AI search by checking whether ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews mention your brand or send buyers to competitors.",
+});
 
 const steps = ['Choose buyer prompts that matter before tracking generic keywords.', 'Record whether your brand is mentioned, ignored, or replaced by competitors.', 'Map each missed prompt to the page that should win it.', 'Ship one high-impact content fix every week.'];
 

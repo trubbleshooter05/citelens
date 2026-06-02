@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { GeoAuditForm } from "@/components/GeoAuditForm";
+import { buildPageMetadata } from "@/lib/seo-metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
+  path: "/claude-citation-guide",
   title: "Claude Citations for My Website | CiteLens",
-  description: "A practical guide to making your website easier for Claude and other AI answer engines to understand, trust, and cite.",
-};
+  description:
+    "A practical guide to making your website easier for Claude and other AI answer engines to understand, trust, and cite.",
+});
 
 const steps = ['Write pages around specific questions Claude users ask before buying.', 'Make claims easy to verify with named sources, examples, methodology, and dated updates.', 'Add comparison and decision criteria in plain text so citations point to the right section.', 'Track when Claude cites competitors and update the missing evidence before the next review.'];
 

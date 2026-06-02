@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { GeoAuditForm } from "@/components/GeoAuditForm";
+import { buildPageMetadata } from "@/lib/seo-metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
+  path: "/ai-brand-gap-analysis",
   title: "Why Doesn't ChatGPT Mention My Brand? | CiteLens",
-  description: "Diagnose why AI answer engines cite competitors instead of your company, then turn the gap into copy-ready fixes.",
-};
+  description:
+    "Diagnose why AI answer engines cite competitors instead of your company, then turn the gap into copy-ready fixes.",
+});
 
 const steps = ['Find the prompts where buyers should see you.', 'Capture which competitors appear and what evidence they provide.', 'Identify the missing page, missing section, or missing proof on your site.', 'Rewrite the page so an AI answer can extract a confident recommendation.'];
 

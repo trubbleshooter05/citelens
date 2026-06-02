@@ -33,7 +33,7 @@ type Opportunity = {
 
 const ROOT = process.cwd();
 const OBSIDIAN_DIR = process.env.CITELENS_OBSIDIAN_GROWTH_DIR ?? "/Users/openclaw/ObsidianVault/projects/citelens/growth-intel";
-const SITE = "https://citelens.app";
+const SITE = "https://www.citelens.app";
 const UGC_REFERENCE_VIDEO = "citelens-score-reveal.mp4";
 const UGC_VOICE = "founder MVP validation voice from citelens-score-reveal.mp4";
 const UGC_HISTORY_FILE = path.join(ROOT, "data", "growth", "ugc-history.json");
@@ -533,6 +533,7 @@ ${top.map((opp, index) => `${index + 1}. **${opp.opportunity}** (${opp.priority}
    - Next: ${opp.nextAction}
    - UGC angle: ${opp.ugcAngle}
    - UGC voice: ${opp.ugcVoice}
+   - UGC hook: ${opp.ugcHook}
    - UGC script: ${opp.ugcScript}`).join("\n\n")}
 
 ## Recommended Build Queue
@@ -589,8 +590,13 @@ function main(): void {
   const markdown = buildMarkdown(date, routes, rows, opportunitiesWithFreshness, freshnessWarning);
   writeFileSync(mdPath, markdown);
   writeFileSync(csvPath, toCsv(opportunitiesWithFreshness));
-  mkdirSync(OBSIDIAN_DIR, { recursive: true });
-  writeFileSync(obsidianMdPath, markdown);
+  try {
+    mkdirSync(OBSIDIAN_DIR, { recursive: true });
+    writeFileSync(obsidianMdPath, markdown);
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    process.stderr.write(`[warn] Obsidian growth-intel mirror skipped: ${message}\n`);
+  }
 
   const top = opportunitiesWithFreshness[0];
   console.log(`${top?.priority ?? "P2"} CiteLens growth intel: ${top?.opportunity ?? "none"} -> ${top?.recommendedAsset ?? "no action"}`);

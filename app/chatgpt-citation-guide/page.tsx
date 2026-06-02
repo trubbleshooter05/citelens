@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { GeoAuditForm } from "@/components/GeoAuditForm";
+import { buildPageMetadata } from "@/lib/seo-metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
+  path: "/chatgpt-citation-guide",
   title: "How Do I Get ChatGPT To Cite My Website? | CiteLens",
-  description: "A practical GEO guide for making your site easier for AI answer engines to discover, trust, and cite.",
-};
+  description:
+    "A practical GEO guide for making your site easier for AI answer engines to discover, trust, and cite.",
+});
 
 const steps = ['Answer the buyer question directly near the top of the page.', 'Add clear evidence: pricing, process, guarantees, examples, and comparison tables.', 'Strengthen entity signals with author, organization, schema, and consistent external profiles.', 'Build pages around specific prompts instead of broad blog topics.'];
 

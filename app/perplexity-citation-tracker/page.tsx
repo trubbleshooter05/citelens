@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { GeoAuditForm } from "@/components/GeoAuditForm";
+import { buildPageMetadata } from "@/lib/seo-metadata";
 
-export const metadata: Metadata = {
-  title: "Perplexity Citations for Your Company | GEO Guide",
+export const metadata: Metadata = buildPageMetadata({
+  path: "/perplexity-citation-tracker",
+  title: "Perplexity Citations for Your Company | CiteLens",
   description:
     "How Perplexity picks sources, displays inline citations, and what to change on site so answers reference your pages instead of competitors.",
-};
+});
 
 const steps = [
   "Identify buyer prompts where Perplexity should surface your entity (comparison, alternatives, definitions).",

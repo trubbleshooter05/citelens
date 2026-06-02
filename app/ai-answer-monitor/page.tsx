@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { GeoAuditForm } from "@/components/GeoAuditForm";
+import { buildPageMetadata } from "@/lib/seo-metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
+  path: "/ai-answer-monitor",
   title: "Monitor AI Answers for Brand Mentions | CiteLens",
-  description: "A practical workflow for monitoring AI answers, brand mentions, competitor recommendations, and citation gaps.",
-};
+  description:
+    "A practical workflow for monitoring AI answers, brand mentions, competitor recommendations, and citation gaps.",
+});
 
 const steps = ['List the prompts where your brand should be mentioned by category, use case, and alternative.', 'Capture the answer, cited sources, competitor mentions, and any positioning mistakes.', 'Turn repeated misses into page updates with clearer claims, schema, examples, and comparisons.', 'Review weekly so AI answer drift becomes a manageable content workflow.'];
 

@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { GeoAuditForm } from "@/components/GeoAuditForm";
+import { buildPageMetadata } from "@/lib/seo-metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
+  path: "/llm-visibility-tracker",
   title: "LLM Visibility Tracker | CiteLens",
-  description: "Track whether AI answer engines mention your brand, cite your pages, and understand your product positioning.",
-};
+  description:
+    "Track whether AI answer engines mention your brand, cite your pages, and understand your product positioning.",
+});
 
 const steps = ['Choose prompts that represent discovery, comparison, objection, and purchase intent.', 'Record whether each LLM mentions you, cites you, misstates you, or ignores you.', 'Prioritize fixes by revenue intent instead of chasing every model response.', 'Update the pages and entity signals that would give the model better evidence next time.'];
 

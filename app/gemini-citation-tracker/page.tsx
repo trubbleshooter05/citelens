@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { GeoAuditForm } from "@/components/GeoAuditForm";
+import { buildPageMetadata } from "@/lib/seo-metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
+  path: "/gemini-citation-tracker",
   title: "Google Gemini AI Citations Tracker | CiteLens",
-  description: "A practical GEO guide for tracking whether Gemini finds, trusts, and cites your pages in AI answers.",
-};
+  description:
+    "A practical GEO guide for tracking whether Gemini finds, trusts, and cites your pages in AI answers.",
+});
 
 const steps = ['Map the Gemini prompts where buyers compare options or ask for recommendations.', 'Check whether Gemini cites your page, a competitor, or no source at all.', 'Add extractable evidence: definitions, comparison tables, pricing, examples, and named authors.', 'Refresh the page when Gemini cites stale or indirect sources instead of your best answer.'];
 

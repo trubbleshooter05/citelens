@@ -41,7 +41,7 @@ export function EmailCapture() {
   return (
     <div className="email-capture">
       <p className="email-capture-label">
-        Want a live audit on your site? Join the waitlist.
+        Get a free AI visibility audit — join the waitlist for your site.
       </p>
       <form className="email-capture-form" onSubmit={handleSubmit}>
         <input
@@ -52,7 +52,7 @@ export function EmailCapture() {
           onChange={(e) => setEmail(e.target.value)}
         />
         <button type="submit" disabled={status === "loading"}>
-          {status === "loading" ? "Sending…" : "Join waitlist"}
+          {status === "loading" ? "Sending…" : "Get free audit"}
         </button>
       </form>
       {status === "error" && (

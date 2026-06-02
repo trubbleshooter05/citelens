@@ -3,12 +3,12 @@
 export function GeoAuditForm() {
   return (
     <div className="sample-report-cta">
-      <a className="sample-report-button" href="#dashboard">
-        See sample report
+      <a className="sample-report-button" href="#waitlist">
+        Get free AI visibility audit
       </a>
       <p>
-        Example report for CardSnap below. Same layout every time. Live audits for
-        your site are early access only.
+        Join the waitlist for a live citation gap report on your site — which prompts
+        you lose, who AI cites instead, and copy-ready fixes each week.
       </p>
     </div>
   );

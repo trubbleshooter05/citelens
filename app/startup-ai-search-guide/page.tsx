@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { GeoAuditForm } from "@/components/GeoAuditForm";
+import { buildPageMetadata } from "@/lib/seo-metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
+  path: "/startup-ai-search-guide",
   title: "AI Search Optimization for Startups | CiteLens",
-  description: "A budget-friendly GEO guide for startups that need ChatGPT, Gemini, Claude, and Perplexity to understand and recommend them.",
-};
+  description:
+    "A budget-friendly GEO guide for startups that need ChatGPT, Gemini, Claude, and Perplexity to understand and recommend them.",
+});
 
 const steps = ['Pick five bottom-funnel prompts your buyers would actually ask an AI assistant.', 'Create one direct answer page per prompt instead of a broad thought-leadership post.', 'Publish proof that machines can extract: pricing, ICP, use cases, integrations, comparisons, and examples.', 'Review AI answer changes weekly so small content edits happen before a competitor owns the answer.'];
 

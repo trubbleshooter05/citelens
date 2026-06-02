@@ -25,18 +25,35 @@ export default function Home() {
       <section className="hero">
         <div>
           <div className="proof-pill">$29/mo AI citation action reports for SMBs</div>
-          <p className="eyebrow">AI citation action engine · GEO platform</p>
+          <p className="eyebrow">AI citation monitoring · competitor tracking · GEO</p>
           <h1>
-            Own your AI citations—with a weekly fix list.
+            See where AI cites your competitors—and get the weekly fix list.
           </h1>
           <p>
-            Most GEO dashboards stop at a visibility score.&nbsp;<strong>Then what?</strong> CiteLens ships a{" "}
-            <strong>copy‑ready weekly task brief</strong>
-            {": "}exact prompts you are losing, the page gaps behind them, and prioritized actions your team can paste into
-            backlog—plus an <strong>AI SEO tool</strong> lens on ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews.
+            ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews recommend
+            someone in every buyer prompt. CiteLens shows{" "}
+            <strong>which prompts you lose</strong>,{" "}
+            <strong>who gets cited instead</strong>, and ships a{" "}
+            <strong>copy-ready weekly task brief</strong> your team can execute—not
+            another vanity visibility score.
           </p>
+          <ul className="hero-outcomes">
+            <li>
+              <strong>Win AI search traffic</strong> — fix the pages and proof gaps
+              behind high-intent prompts.
+            </li>
+            <li>
+              <strong>Monitor competitor citations</strong> — see who AI recommends
+              when buyers compare options.
+            </li>
+            <li>
+              <strong>Ship one fix per week</strong> — prioritized tasks with effort
+              and impact, ready for your backlog.
+            </li>
+          </ul>
           <p className="demo-note">
-            Early access. The report below is a static CardSnap example. Live audits for your site are waitlist-only.
+            Sample report below uses CardSnap data. Live audits for your domain are
+            waitlist-only.
           </p>
           <GeoAuditForm />
         </div>
@@ -170,10 +187,10 @@ export default function Home() {
       </section>
 
       <section className="final-cta" id="waitlist">
-        <h2>Live audits opening soon</h2>
+        <h2>Free AI visibility audit (waitlist)</h2>
         <p>
-          The sample report above shows the format. Waitlist members get first access
-          to prompt tracking and copy-ready task briefs for their own site.
+          Get a citation gap report for your site: prompts you lose, competitors AI
+          cites, and the exact page updates to ship first.
         </p>
         <EmailCapture />
       </section>
