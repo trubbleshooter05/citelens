@@ -41,6 +41,37 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      "name": "CiteLens",
+      "url": siteUrl,
+      "description": "AI citation tracking platform that delivers weekly copy-ready fix briefs for ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews.",
+      "sameAs": [],
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      "url": siteUrl,
+      "name": "CiteLens",
+      "publisher": { "@id": `${siteUrl}/#organization` },
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": `${siteUrl}/#app`,
+      "name": "CiteLens",
+      "url": siteUrl,
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "Own your AI citations with a weekly copy-ready task brief — exact fixes for ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    },
+  ],
+};
+
 export default function RootLayout({
   children
 }: Readonly<{
@@ -50,6 +81,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <GoogleAnalyticsInit />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body>
         <GoogleAnalytics />
