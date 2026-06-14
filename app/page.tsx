@@ -7,9 +7,24 @@ const priorityTask = weeklyActions[0];
 const competitorCount = new Set(prompts.flatMap((p) => p.competitors)).size;
 const pageCount = new Set(prompts.map((p) => p.targetPage)).size;
 
+const homepageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "CiteLens",
+  url: "https://citelens.app",
+  description: "Citation tracking and research tool",
+};
+
 export default function Home() {
   return (
-    <main className="app-shell">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(homepageJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <main className="app-shell">
       <header className="topbar">
         <div className="brand">
           <span />
@@ -195,5 +210,6 @@ export default function Home() {
         <EmailCapture />
       </section>
     </main>
+    </>
   );
 }
