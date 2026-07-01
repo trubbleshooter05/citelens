@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getSiteUrl } from "@/lib/site-url";
+import { getGeneratedBlogPosts } from "@/lib/generated-blog";
 
 const TOPIC_SLUGS = [
   "chatgpt-citation-guide",
@@ -16,7 +17,20 @@ const TOPIC_SLUGS = [
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = getSiteUrl();
   const lastModified = new Date();
+  const blogPosts = getGeneratedBlogPosts();
   return [
+    {
+      url: `${siteUrl}/blog`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    ...blogPosts.map((post) => ({
+      url: `${siteUrl}/blog/${encodeURIComponent(post.slug)}`,
+      lastModified: new Date(post.publishedAt),
+      changeFrequency: "weekly" as const,
+      priority: 0.75,
+    })),
     {
       url: siteUrl,
       lastModified,
