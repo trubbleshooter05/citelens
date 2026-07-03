@@ -8,14 +8,15 @@ import {
 } from "@/lib/generated-blog";
 import { getSiteUrl } from "@/lib/site-url";
 
-type Props = { params: { slug: string } };
+type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
   return getGeneratedBlogSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const post = getGeneratedBlogPost(params.slug);
+  const { slug } = await params;
+  const post = getGeneratedBlogPost(slug);
   if (!post) return { title: "Not found | CiteLens" };
   return buildPageMetadata({
     path: `/blog/${post.slug}`,
@@ -24,8 +25,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 }
 
-export default function BlogPostPage({ params }: Props) {
-  const post = getGeneratedBlogPost(params.slug);
+export default async function BlogPostPage({ params }: Props) {
+  const { slug } = await params;
+  const post = getGeneratedBlogPost(slug);
   if (!post) notFound();
   const siteUrl = getSiteUrl();
 
