@@ -6,7 +6,8 @@ import { getGeneratedBlogPosts } from "@/lib/generated-blog";
 export const metadata: Metadata = buildPageMetadata({
   path: "/blog",
   title: "AI Visibility & Citation Guides | CiteLens",
-  description: "Practical GEO guides for researchers and SaaS founders.",
+  description:
+    "GEO and AI citation guides for SMB owners, SEO agencies, and freelance consultants.",
 });
 
 export default function BlogIndexPage() {
@@ -17,6 +18,9 @@ export default function BlogIndexPage() {
         <Link className="brand" href="/">
           <span /> CiteLens
         </Link>
+        <nav>
+          <Link href="/#waitlist">Waitlist</Link>
+        </nav>
       </header>
       <section className="topic-hero">
         <h1>CiteLens Blog</h1>
@@ -26,6 +30,7 @@ export default function BlogIndexPage() {
         {posts.map((post) => (
           <article key={post.slug} className="topic-panel">
             <Link href={`/blog/${post.slug}`}>
+              <p className="eyebrow">{post.publishedAt}</p>
               <h2>{post.title}</h2>
               <p>{post.description}</p>
             </Link>
